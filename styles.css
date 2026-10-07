@@ -935,3 +935,401 @@ h3 {
     left: 180px;
   }
 }
+/* =========================================================
+   SHOP + PHILOSOPHY + HANDCRAFTED
+   ========================================================= */
+
+
+/* ---------- SHOP SHOWCASE ---------- */
+
+.shop-showcase {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 92% 10%, rgba(200, 165, 106, 0.12), transparent 20%),
+    radial-gradient(circle at 8% 88%, rgba(69, 20, 37, 0.05), transparent 22%),
+    var(--cream);
+}
+
+.shop-showcase::before {
+  content: "✦";
+  position: absolute;
+  top: 60px;
+  right: 7%;
+  color: var(--gold);
+  font-size: 2.5rem;
+}
+
+.shop-showcase::after {
+  content: "♡";
+  position: absolute;
+  bottom: 70px;
+  left: 5%;
+  color: rgba(69, 20, 37, 0.28);
+  font-size: 2rem;
+  transform: rotate(-8deg);
+}
+
+.shop-showcase-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.shop-copy {
+  position: relative;
+  z-index: 3;
+}
+
+.shop-collage {
+  position: relative;
+  min-height: 470px;
+}
+
+.product-card {
+  position: absolute;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(69, 20, 37, 0.08);
+}
+
+.product-card-one {
+  width: 250px;
+  height: 330px;
+  left: 20px;
+  top: 65px;
+  background: var(--burgundy);
+  border-radius: 34px 34px 34px 10px;
+  transform: rotate(-7deg);
+}
+
+.product-card-two {
+  width: 230px;
+  height: 290px;
+  left: 190px;
+  top: 10px;
+  background: var(--gold-pale);
+  border-radius: 10px 34px 34px 34px;
+  transform: rotate(6deg);
+}
+
+.product-card-three {
+  width: 220px;
+  height: 250px;
+  right: 15px;
+  bottom: 15px;
+  background: var(--cream-light);
+  border-radius: 34px 10px 34px 34px;
+  transform: rotate(-3deg);
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.35);
+  right: -20px;
+  top: -20px;
+}
+
+.product-card-two::before,
+.product-card-three::before {
+  border-color: rgba(69,20,37,0.15);
+}
+
+.product-card-label {
+  position: absolute;
+  left: 26px;
+  bottom: 26px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.product-card-one .product-card-label {
+  color: var(--cream);
+}
+
+.product-card-two .product-card-label,
+.product-card-three .product-card-label {
+  color: var(--burgundy-deep);
+}
+
+.shop-hand-note {
+  position: absolute;
+  right: 20px;
+  top: 325px;
+  font-family: cursive;
+  color: var(--burgundy);
+  font-size: 1.25rem;
+  transform: rotate(-5deg);
+}
+
+.shop-scribble {
+  position: absolute;
+  width: 160px;
+  height: 70px;
+  right: 20px;
+  top: 250px;
+  border-top: 2px solid var(--gold);
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+
+
+/* ---------- PHILOSOPHY STATEMENT ---------- */
+
+.philosophy-showcase {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(200, 165, 106, 0.12), transparent 19%),
+    radial-gradient(circle at 82% 75%, rgba(101, 39, 67, 0.45), transparent 28%),
+    var(--burgundy-deep);
+  color: var(--cream);
+}
+
+.philosophy-showcase::before {
+  content: "";
+  position: absolute;
+  width: 460px;
+  height: 460px;
+  border: 1px solid rgba(224, 199, 149, 0.18);
+  border-radius: 50%;
+  right: -180px;
+  top: -120px;
+}
+
+.philosophy-showcase::after {
+  content: "✦";
+  position: absolute;
+  left: 7%;
+  bottom: 55px;
+  color: var(--gold-pale);
+  font-size: 2.8rem;
+}
+
+.philosophy-layout {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.philosophy-mark {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(8rem, 18vw, 15rem);
+  line-height: 0.8;
+  color: rgba(224, 199, 149, 0.22);
+  transform: rotate(-5deg);
+  user-select: none;
+}
+
+.philosophy-copy h2 {
+  color: var(--cream);
+}
+
+.philosophy-copy .lead {
+  color: rgba(247, 231, 206, 0.9);
+}
+
+.philosophy-note {
+  font-family: cursive;
+  color: var(--gold-pale);
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-bottom: 10px;
+  transform: rotate(-2deg);
+}
+
+.philosophy-emphasis {
+  margin-top: 28px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  color: var(--gold-pale);
+}
+
+
+/* ---------- HANDCRAFTED SHOWCASE ---------- */
+
+.handcrafted-showcase {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(140deg, var(--cream-light), var(--cream));
+}
+
+.handcrafted-showcase::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: -140px;
+  top: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(69, 20, 37, 0.12);
+}
+
+.handcrafted-showcase::after {
+  content: "✦";
+  position: absolute;
+  right: 8%;
+  top: 18%;
+  font-size: 2rem;
+  color: var(--gold);
+}
+
+.handcrafted-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.handmade-collage {
+  position: relative;
+  min-height: 500px;
+}
+
+.handmade-frame {
+  position: absolute;
+  box-shadow: var(--shadow);
+  border: 10px solid var(--white);
+}
+
+.handmade-frame-one {
+  width: 270px;
+  height: 340px;
+  left: 25px;
+  top: 70px;
+  background: var(--burgundy);
+  border-radius: 150px 150px 30px 30px;
+  transform: rotate(-5deg);
+}
+
+.handmade-frame-two {
+  width: 240px;
+  height: 300px;
+  left: 235px;
+  top: 10px;
+  background: var(--gold-pale);
+  border-radius: 30px 30px 150px 150px;
+  transform: rotate(7deg);
+}
+
+.handmade-frame-three {
+  width: 220px;
+  height: 250px;
+  right: 10px;
+  bottom: 10px;
+  background: var(--cream);
+  border-radius: 35px;
+  transform: rotate(-4deg);
+}
+
+.handmade-frame-label {
+  position: absolute;
+  inset: auto 20px 20px 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+}
+
+.handmade-frame-one .handmade-frame-label {
+  color: var(--cream);
+}
+
+.handmade-frame-two .handmade-frame-label,
+.handmade-frame-three .handmade-frame-label {
+  color: var(--burgundy-deep);
+}
+
+.handmade-note {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  font-family: cursive;
+  color: var(--burgundy);
+  font-size: 1.25rem;
+  transform: rotate(-4deg);
+}
+
+.handmade-line {
+  position: absolute;
+  width: 160px;
+  height: 80px;
+  left: 44%;
+  bottom: 20px;
+  border-top: 2px solid var(--gold);
+  border-radius: 50%;
+  transform: rotate(-8deg);
+}
+
+.handcrafted-copy {
+  position: relative;
+  z-index: 3;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+
+  .shop-showcase-layout,
+  .philosophy-layout,
+  .handcrafted-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-collage,
+  .handmade-collage {
+    min-height: 420px;
+  }
+
+  .philosophy-mark {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .product-card-one {
+    width: 180px;
+    height: 250px;
+    left: 0;
+  }
+
+  .product-card-two {
+    width: 170px;
+    height: 220px;
+    left: 120px;
+  }
+
+  .product-card-three {
+    width: 160px;
+    height: 190px;
+    right: 0;
+  }
+
+  .handmade-frame-one {
+    width: 180px;
+    height: 250px;
+    left: 0;
+  }
+
+  .handmade-frame-two {
+    width: 170px;
+    height: 220px;
+    left: 120px;
+  }
+
+  .handmade-frame-three {
+    width: 160px;
+    height: 190px;
+    right: 0;
+  }
+}
