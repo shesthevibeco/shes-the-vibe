@@ -1,159 +1,407 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#451425">
-  <meta name="description" content="She's the Vibe — Christina Wood. One woman. Many worlds.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="She's the Vibe — a creative lifestyle space for things to wear, use, read, create with, and make life feel a little more like you.">
+
   <title>She's the Vibe</title>
+
   <link rel="icon" type="image/png" href="Icon.png">
   <link rel="apple-touch-icon" href="Icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --burgundy:#451425;--burgundy-deep:#2b0d17;--cream:#F7E7CE;--cream2:#fff7ea;
-      --gold:#c8a56a;--gold-pale:#e0c795;--ink:#25191d;--shadow:0 22px 60px rgba(32,8,17,.14);
-      --radius:28px;--max:1120px
-    }
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;color:var(--ink);background:var(--cream2);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;overflow-x:hidden}
-    a{color:inherit}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
-    .hero{min-height:92vh;display:grid;place-items:center;text-align:center;color:var(--cream);background:
-      radial-gradient(circle at 18% 18%,rgba(200,165,106,.14),transparent 26%),
-      radial-gradient(circle at 82% 74%,rgba(247,231,206,.07),transparent 30%),
-      linear-gradient(145deg,var(--burgundy-deep),var(--burgundy) 58%,#5a1c32);
-      position:relative;isolation:isolate;padding:72px 20px}
-    .hero:after{content:"";position:absolute;inset:18px;border:1px solid rgba(224,199,149,.34);border-radius:32px;pointer-events:none}
-    .hero-inner{max-width:900px;z-index:1}
-    .script{font-family:Allura,cursive;font-size:clamp(2.6rem,7vw,5.4rem);line-height:1;margin:0 0 18px;background:linear-gradient(110deg,#b48a49,#f2deb0 42%,#c39857 72%,#f4e2bb);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .name{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(3.2rem,10vw,7.6rem);font-weight:500;letter-spacing:.11em;line-height:.9;margin:0;text-transform:uppercase;text-shadow:0 1px 0 rgba(255,255,255,.38),0 4px 0 rgba(36,7,17,.18)}
-    .hero-kicker{margin:28px 0 34px;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.25rem,3.5vw,1.8rem);font-style:italic;letter-spacing:.04em;color:rgba(247,231,206,.88)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:999px;border:1px solid currentColor;text-decoration:none;font-size:.78rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;transition:.25s ease}
-    .btn.gold{color:var(--cream);border-color:rgba(224,199,149,.62);background:rgba(255,255,255,.03)}
-    .btn:hover,.btn:focus-visible{transform:translateY(-2px)}.btn:focus-visible{outline:2px solid var(--gold-pale);outline-offset:4px}
-    section{padding:92px 0}.intro{text-align:center;background:var(--cream)}
-    .eyebrow{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(69,20,37,.72);margin-bottom:16px}
-    h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0;font-weight:500}
-    h2{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1}.lead{max-width:720px;margin:26px auto 0;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.35rem,3vw,1.8rem);line-height:1.55}
-    .intro strong{color:var(--burgundy)}.worlds{background:#fffaf1}.section-head{text-align:center;margin-bottom:52px}.section-head p{margin:14px auto 0;max-width:650px;color:#615258}
-    .world-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.world{min-height:430px;border-radius:var(--radius);padding:34px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(69,20,37,.08)}
-    .world:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 18%,rgba(255,255,255,.36),transparent 24%),linear-gradient(to top,rgba(20,10,13,.24),transparent 45%);pointer-events:none}
-    .world>*{position:relative;z-index:1}.ash{background:linear-gradient(145deg,#d7d8c9 0%,#b7c1aa 46%,#b7a3c4 100%);color:#2f2330}
-    .willow{background:linear-gradient(145deg,#1c3027 0%,#335241 56%,#917851 100%);color:#fff8ec}.wfc{background:linear-gradient(145deg,#d7cdb5 0%,#9da78b 48%,#6d7a62 100%);color:#29251e}
-    .world h3{font-size:clamp(2rem,4.4vw,3.3rem);line-height:.95;margin-bottom:10px}.tagline{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.25rem;margin:0 0 12px}.world-copy{margin:0 0 24px;max-width:34ch}
-    .world .btn{align-self:flex-start;background:rgba(255,255,255,.18);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
-    .shop{color:var(--cream);background:linear-gradient(rgba(45,11,22,.88),rgba(45,11,22,.88)),radial-gradient(circle at 12% 20%,rgba(200,165,106,.23),transparent 30%),var(--burgundy);text-align:center}
-    .shop .section-head p{color:rgba(247,231,206,.78)}.shop .headline-mini{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.5rem;margin:24px auto 8px}.shop-copy{max-width:760px;margin:0 auto;color:rgba(247,231,206,.86)}
-    .shop-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:30px 0 24px}.soon{position:relative;opacity:.82;cursor:not-allowed}.soon:after{content:"coming soon";position:absolute;top:calc(100% + 7px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(247,231,206,.62)}
-    .signature{margin-top:42px;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.35rem;color:var(--gold-pale)}
-    .behind{background:var(--cream);text-align:center}.behind-copy{max-width:760px;margin:26px auto 0;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.45rem}.behind-copy p{margin:0 0 18px}.behind-copy .core{color:var(--burgundy);font-size:1.8rem;font-style:italic}
-    .stay{background:#fffaf1;text-align:center;padding-bottom:74px}.stay p{margin:14px 0 30px;color:#6d5f64;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.3rem}.stay-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}.stay .btn{color:var(--burgundy);border-color:rgba(69,20,37,.3);background:white}
-    footer{background:var(--burgundy-deep);color:rgba(247,231,206,.72);text-align:center;padding:28px 18px 36px;font-size:.78rem}footer .footer-script{display:block;font-family:Allura,cursive;color:var(--gold-pale);font-size:2.1rem;line-height:1;margin-bottom:10px}footer .footer-tag{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1rem;color:rgba(247,231,206,.9);margin-bottom:6px}
-    @media(max-width:900px){.world-grid{grid-template-columns:1fr}.world{min-height:360px}section{padding:74px 0}}
-    @media(max-width:560px){.wrap{width:min(100% - 24px,var(--max))}.hero{min-height:86vh;padding:62px 18px}.hero:after{inset:10px;border-radius:24px}.name{letter-spacing:.07em}.world{padding:28px}.shop-actions,.stay-actions{flex-direction:column;align-items:stretch}.shop-actions .btn,.stay-actions .btn{width:100%}.soon{margin-bottom:14px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header class="hero" id="top">
-  <div class="hero-inner">
-    <p class="script">she’s the vibe.</p>
-    <h1 class="name">Christina Wood</h1>
-    <p class="hero-kicker">step into the vibe...</p>
-    <a class="btn gold" href="#intro">Enter</a>
-  </div>
-</header>
 
-<main>
-<section class="intro" id="intro">
-  <div class="wrap">
-    <p class="eyebrow">one woman. many worlds.</p>
-    <h2>Different ideas.<br>Different expressions.</h2>
-    <p class="lead">One point of origin.<br><strong>Welcome to my world.</strong></p>
-  </div>
-</section>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-wrap">
 
-<section class="worlds" id="worlds">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">explore her worlds.</p>
-      <h2>Each one tells a different story.</h2>
-      <p>Every one starts with her.</p>
+      <a href="index.html" class="logo">SHE'S THE VIBE</a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
     </div>
+  </header>
 
-    <div class="world-grid">
-      <article class="world ash">
-        <h3>AshX Bloom</h3>
-        <p class="tagline">words. growth. becoming.</p>
-        <p class="world-copy">Where reflection becomes language, healing becomes growth, and stories become something worth carrying forward.</p>
-        <a class="btn" href="https://ashxbloom.com" target="_blank" rel="noopener">Enter AshX Bloom</a>
-      </article>
 
-      <article class="world willow">
-        <h3>Willow &amp; Wisp</h3>
-        <p class="tagline">wonder. magic. forever whimsy</p>
-        <p class="world-copy">Tiny treasures made to feel discovered, chosen, and a little enchanted.</p>
-        <a class="btn" href="https://www.instagram.com/willow.and.wisp.jewelry/" target="_blank" rel="noopener">Enter Willow &amp; Wisp</a>
-      </article>
+  <!-- HERO -->
+  <main>
 
-      <article class="world wfc">
-        <h3>Wood Family Creations</h3>
-        <p class="tagline">made for living.</p>
-        <p class="world-copy">Handmade goods, thoughtful comforts, and useful little things created from real family life.</p>
-        <a class="btn" href="https://www.instagram.com/woodfamilycreationsllc/" target="_blank" rel="noopener">Enter Wood Family Creations</a>
-      </article>
+    <section class="section section-dark">
+      <div class="container">
+
+        <p class="eyebrow">Practical. Pretty. You.</p>
+
+        <h1>She's the Vibe</h1>
+
+        <h3 class="script">
+          A woman. A vision. More than one world.
+        </h3>
+
+        <p class="lead">
+          Things to wear, use, read, create with, and make life feel a little more like you.
+        </p>
+
+        <div style="margin-top: 30px;">
+          <a href="#explore" class="btn btn-primary">Explore the Vibe</a>
+          <a href="shop.html" class="btn btn-outline">Shop the Vibe</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CATEGORY STRIP -->
+    <section class="section-burgundy" style="padding: 24px 0;">
+      <div class="container">
+        <p style="text-align:center; letter-spacing:.2em; font-weight:700;">
+          SHOP &nbsp; • &nbsp; READ &nbsp; • &nbsp; CREATE &nbsp; • &nbsp; LIVE &nbsp; • &nbsp; GROW
+        </p>
+      </div>
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="section section-cream">
+      <div class="container">
+
+        <p class="eyebrow">Welcome to the Vibe</p>
+
+        <h2>One woman. Many interests. One place for all of it.</h2>
+
+        <p class="lead">
+          She's the Vibe is a creative lifestyle space for women who were never meant
+          to fit into one box. Shop something beautiful, find something useful,
+          read something real, or discover whatever I'm creating next.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- EXPLORE -->
+    <section class="section" id="explore">
+      <div class="container">
+
+        <p class="eyebrow">Explore</p>
+        <h2>Find Your Vibe</h2>
+
+        <div class="card-grid" style="margin-top:40px;">
+
+          <article class="card">
+            <h3>Shop the Vibe</h3>
+            <p>
+              Digital tools, stationery, apparel, jewelry, handcrafted goods,
+              gifts and more.
+            </p>
+            <a href="shop.html">Shop →</a>
+          </article>
+
+          <article class="card">
+            <h3>Read the Vibe</h3>
+            <p>
+              Personal essays, stories, reflections, creativity,
+              books and whatever I'm writing lately.
+            </p>
+            <a href="blog.html">Read the Blog →</a>
+          </article>
+
+          <article class="card">
+            <h3>Use the Vibe</h3>
+            <p>
+              Resources, printables, worksheets, guides and practical tools
+              created for real life.
+            </p>
+            <a href="resources.html">Browse Resources →</a>
+          </article>
+
+        </div>
+
+        <div class="card-grid" style="margin-top:28px;">
+
+          <article class="card">
+            <h3>Work With the Vibe</h3>
+            <p>
+              Coaching, permanent jewelry, custom work, creative services
+              and collaborations.
+            </p>
+            <a href="services.html">View Services →</a>
+          </article>
+
+          <article class="card">
+            <h3>See the Vibe</h3>
+            <p>
+              Jewelry, handmade work, product styling, events and pieces
+              created in real life.
+            </p>
+            <a href="gallery.html">View Gallery →</a>
+          </article>
+
+          <article class="card">
+            <h3>Feel the Vibe</h3>
+            <p>
+              Read what clients, customers and collaborators have to say
+              about their experience.
+            </p>
+            <a href="testimonials.html">Read Testimonials →</a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FEATURED SHOP -->
+    <section class="section section-cream">
+      <div class="container">
+
+        <p class="eyebrow">Shop</p>
+
+        <h2>Useful. Beautiful. A Little Extra.</h2>
+
+        <p class="lead">
+          Digital products, jewelry, handcrafted goods, stationery, apparel,
+          gifts and lifestyle pieces made to bring a little more personality
+          into everyday life.
+        </p>
+
+        <div style="margin-top:30px;">
+          <a href="shop.html" class="btn btn-primary">Shop the Vibe</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- BRAND STATEMENT -->
+    <section class="section section-burgundy">
+      <div class="container">
+
+        <p class="eyebrow">The Philosophy</p>
+
+        <h2>You Were Never Supposed to Fit Into One Box.</h2>
+
+        <p class="lead">
+          You can be practical and creative. Ambitious and soft.
+          Organized and spontaneous. A professional, a mother, a maker,
+          a writer, a dreamer — and still be completely yourself.
+        </p>
+
+        <p class="lead" style="margin-top:15px;">
+          Neither was this brand.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- HANDCRAFTED -->
+    <section class="section">
+      <div class="container">
+
+        <p class="eyebrow">Handcrafted</p>
+
+        <h2>Made by Hand. Worn Your Way.</h2>
+
+        <p class="lead">
+          Permanent jewelry, bracelets, waist beads, handcrafted goods,
+          soap and whatever I'm making next.
+        </p>
+
+        <div style="margin-top:30px;">
+          <a href="gallery.html" class="btn btn-primary">View the Gallery</a>
+          <a href="shop.html" class="btn">Shop Handcrafted</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- BLOG -->
+    <section class="section section-cream">
+      <div class="container">
+
+        <p class="eyebrow">Writing</p>
+
+        <h2>Read the Vibe</h2>
+
+        <p class="lead">
+          Essays, stories, reflections, motherhood, creativity,
+          identity, books, business and whatever has been living
+          in my head lately.
+        </p>
+
+        <div style="margin-top:30px;">
+          <a href="blog.html" class="btn btn-primary">Read the Blog</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- RESOURCES -->
+    <section class="section">
+      <div class="container">
+
+        <p class="eyebrow">Resources</p>
+
+        <h2>Made to Be Used.</h2>
+
+        <p class="lead">
+          Practical resources, worksheets, printables, checklists,
+          guides and tools created to make real life a little easier.
+        </p>
+
+        <div style="margin-top:30px;">
+          <a href="resources.html" class="btn btn-primary">Explore Resources</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+    <section class="section section-dark">
+      <div class="container">
+
+        <p class="eyebrow">Client Love</p>
+
+        <h2>The Vibe, According to You.</h2>
+
+        <p class="lead">
+          Real experiences from clients, customers and people
+          who have worked with She's the Vibe.
+        </p>
+
+        <div style="margin-top:30px;">
+          <a href="testimonials.html" class="btn btn-outline">Read Testimonials</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section section-cream">
+      <div class="container">
+
+        <p class="eyebrow">Behind the Vibe</p>
+
+        <h2>I've Never Been Just One Thing.</h2>
+
+        <p class="lead">
+          I create. I write. I build. I make. I follow the ideas that refuse
+          to leave me alone.
+        </p>
+
+        <p class="lead" style="margin-top:15px;">
+          She's the Vibe is the place where all of those parts get to exist
+          together — different expressions, different ideas, same woman behind them all.
+        </p>
+
+        <div style="margin-top:30px;">
+          <a href="about.html" class="btn btn-primary">Meet Christina</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="section">
+      <div class="container">
+
+        <p class="eyebrow">Gallery</p>
+
+        <h2>See the Vibe in Real Life.</h2>
+
+        <p class="lead">
+          A growing collection of jewelry, handmade pieces,
+          styled products, events and creative work.
+        </p>
+
+        <div style="margin-top:30px;">
+          <a href="gallery.html" class="btn btn-primary">View Gallery</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- STAY IN THE VIBE -->
+    <section class="section section-burgundy">
+      <div class="container">
+
+        <p class="eyebrow">Stay Connected</p>
+
+        <h2>Stay in the Vibe.</h2>
+
+        <p class="lead">
+          New products. New writing. New resources.
+          Whatever comes next.
+        </p>
+
+        <p style="margin-top:20px;">
+          Keep close. Keep curious. Come find what's next.
+        </p>
+
+        <div style="margin-top:30px;">
+          <a href="contact.html" class="btn btn-outline">Say Hello</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-brand">She's the Vibe</div>
+          <p>Practical. Pretty. You.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="shop.html">Shop</a>
+          <a href="blog.html">Blog</a>
+          <a href="resources.html">Resources</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 She's the Vibe. All rights reserved.
+      </div>
+
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="shop" id="shop">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow" style="color:var(--gold-pale)">shop the vibe.</p>
-      <h2>Pretty systems for real life.</h2>
-    </div>
-    <p class="headline-mini">Made to be used, not just admired.</p>
-    <p class="shop-copy">Planners, trackers, templates, and digital tools created to make everyday life feel a little more organized—and a lot more beautiful.</p>
-    <div class="shop-actions" aria-label="Shop categories coming soon">
-      <span class="btn gold soon" aria-disabled="true">Shop Digital</span>
-      <span class="btn gold soon" aria-disabled="true">Shop Printables</span>
-      <span class="btn gold soon" aria-disabled="true">Commercial Licenses</span>
-    </div>
-    <p class="signature">created for real life. styled like a vibe.</p>
-  </div>
-</section>
 
-<section class="behind" id="behind">
-  <div class="wrap">
-    <p class="eyebrow">behind the vibe.</p>
-    <h2>I’ve never been just one thing.</h2>
-    <div class="behind-copy">
-      <p>I create. I write. I build. I make. I follow the ideas that refuse to leave me alone.</p>
-      <p>Different worlds. Different expressions. Same woman behind them all.</p>
-      <p class="core">Not because they’re identical, but because they’re mine.</p>
-    </div>
-  </div>
-</section>
+  <script src="script.js"></script>
 
-<section class="stay" id="stay">
-  <div class="wrap">
-    <p class="eyebrow">stay in the vibe.</p>
-    <h2>Keep close. Keep curious.</h2>
-    <p>come find what’s next.</p>
-    <div class="stay-actions">
-      <a class="btn" href="https://www.instagram.com/shesthevibeco/" target="_blank" rel="noopener">Instagram</a>
-      <a class="btn" href="mailto:shesthevibeco@gmail.com?subject=Hello%20from%20She's%20the%20Vibe">Say Hello</a>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer>
-  <span class="footer-script">she’s the vibe.</span>
-  <div class="footer-tag">created for real life. styled like a vibe.</div>
-  <div>© 2026 She’s the Vibe · Wood Family Creations LLC</div>
-</footer>
 </body>
 </html>
