@@ -262,3 +262,470 @@ h3 {
     padding: 65px 0;
   }
 }
+/* =========================================================
+   SHE'S THE VIBE — WHIMSICAL GRAPHIC LAYER
+   ========================================================= */
+
+
+/* ---------- DECORATIVE BASICS ---------- */
+
+.whimsy-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.whimsy-content {
+  position: relative;
+  z-index: 5;
+}
+
+.sparkle {
+  position: absolute;
+  color: var(--gold-pale);
+  font-size: 1.8rem;
+  line-height: 1;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.sparkle-small {
+  font-size: 1rem;
+}
+
+.sparkle-large {
+  font-size: 3rem;
+}
+
+.sparkle-one {
+  top: 15%;
+  right: 12%;
+  transform: rotate(12deg);
+}
+
+.sparkle-two {
+  top: 35%;
+  right: 6%;
+  transform: rotate(-8deg);
+}
+
+.sparkle-three {
+  bottom: 16%;
+  left: 7%;
+  transform: rotate(14deg);
+}
+
+
+/* ---------- ORGANIC BLOBS ---------- */
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.blob-gold {
+  background: rgba(200, 165, 106, 0.12);
+}
+
+.blob-plum {
+  background: rgba(101, 39, 67, 0.45);
+}
+
+.blob-cream {
+  background: rgba(247, 231, 206, 0.08);
+}
+
+.blob-one {
+  width: 360px;
+  height: 360px;
+  top: -100px;
+  right: -80px;
+  border-radius: 58% 42% 63% 37% / 45% 61% 39% 55%;
+}
+
+.blob-two {
+  width: 220px;
+  height: 220px;
+  bottom: -80px;
+  left: -60px;
+  border-radius: 38% 62% 45% 55% / 60% 42% 58% 40%;
+}
+
+.blob-three {
+  width: 160px;
+  height: 160px;
+  top: 24%;
+  left: 48%;
+  border-radius: 62% 38% 57% 43% / 42% 64% 36% 58%;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero-whimsy {
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 25%, rgba(200, 165, 106, 0.10), transparent 23%),
+    radial-gradient(circle at 15% 85%, rgba(101, 39, 67, 0.55), transparent 25%),
+    var(--burgundy-deep);
+}
+
+.hero-whimsy::before {
+  content: "";
+  position: absolute;
+  inset: 22px;
+  border: 1px solid rgba(224, 199, 149, 0.32);
+  border-radius: 26px;
+  pointer-events: none;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 5;
+}
+
+.hero-copy h1 {
+  color: var(--cream);
+  margin: 8px 0 10px;
+  position: relative;
+}
+
+.hero-copy .script {
+  color: var(--cream);
+  font-size: clamp(1.6rem, 3vw, 2.7rem);
+  margin-bottom: 14px;
+}
+
+.hero-copy .lead {
+  color: rgba(247, 231, 206, 0.92);
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+
+/* ---------- HERO GRAPHIC ---------- */
+
+.hero-art {
+  min-height: 370px;
+  position: relative;
+}
+
+.hero-art-circle {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  border: 1px solid rgba(224, 199, 149, 0.55);
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.hero-art-circle::before {
+  content: "";
+  position: absolute;
+  inset: 24px;
+  border-radius: 50%;
+  background: rgba(101, 39, 67, 0.55);
+}
+
+.hero-art-circle::after {
+  content: "✦";
+  position: absolute;
+  top: -18px;
+  right: 40px;
+  font-size: 3rem;
+  color: var(--gold-pale);
+}
+
+.hero-note {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+  color: var(--gold-pale);
+  font-family: cursive;
+  font-size: 1.35rem;
+  transform: rotate(-6deg);
+}
+
+.hero-orbit {
+  position: absolute;
+  width: 380px;
+  height: 175px;
+  border: 1px solid rgba(224, 199, 149, 0.3);
+  border-radius: 50%;
+  right: -15px;
+  top: 98px;
+  transform: rotate(-18deg);
+}
+
+.hero-mini-heart {
+  position: absolute;
+  top: 70px;
+  left: 25px;
+  font-size: 2rem;
+  color: var(--gold);
+  transform: rotate(-12deg);
+}
+
+
+/* ---------- HANDWRITTEN LABELS ---------- */
+
+.handwritten-note {
+  display: inline-block;
+  font-family: cursive;
+  font-size: 1.2rem;
+  color: var(--burgundy);
+  transform: rotate(-3deg);
+  margin: 10px 0;
+}
+
+.handwritten-note-light {
+  color: var(--gold-pale);
+}
+
+
+/* ---------- DECORATIVE DIVIDER ---------- */
+
+.doodle-divider {
+  width: 150px;
+  height: 28px;
+  margin: 28px 0;
+  position: relative;
+}
+
+.doodle-divider::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 18px;
+  left: 0;
+  top: 4px;
+  border-top: 2px solid var(--gold);
+  border-radius: 50%;
+  transform: rotate(-4deg);
+}
+
+.doodle-divider::after {
+  content: "✦";
+  position: absolute;
+  right: 8px;
+  top: -10px;
+  color: var(--gold);
+  font-size: 1.5rem;
+}
+
+
+/* ---------- PLAYFUL CARDS ---------- */
+
+.vibe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 45px;
+}
+
+.vibe-card {
+  position: relative;
+  background: var(--white);
+  border-radius: 32px 32px 32px 8px;
+  padding: 34px;
+  min-height: 270px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(69, 20, 37, 0.08);
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.vibe-card:nth-child(even) {
+  border-radius: 8px 32px 32px 32px;
+}
+
+.vibe-card:hover {
+  transform: translateY(-8px) rotate(-0.5deg);
+  box-shadow: 0 28px 70px rgba(32, 8, 17, 0.18);
+}
+
+.vibe-card::after {
+  content: "";
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  right: -25px;
+  bottom: -25px;
+  border-radius: 50%;
+  background: rgba(200, 165, 106, 0.13);
+}
+
+.vibe-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50% 50% 50% 16px;
+  display: grid;
+  place-items: center;
+  background: var(--cream);
+  color: var(--burgundy);
+  font-size: 1.7rem;
+  margin-bottom: 25px;
+  transform: rotate(-4deg);
+}
+
+.vibe-card:nth-child(even) .vibe-icon {
+  transform: rotate(5deg);
+  background: rgba(200, 165, 106, 0.22);
+}
+
+.vibe-card h3 {
+  color: var(--burgundy-deep);
+}
+
+.vibe-card a {
+  color: var(--burgundy);
+  font-weight: 700;
+}
+
+.vibe-card a:hover {
+  color: var(--gold);
+}
+
+
+/* ---------- SECTION HEADING GRAPHICS ---------- */
+
+.section-heading-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.section-heading-wrap::after {
+  content: "✦";
+  position: absolute;
+  right: -35px;
+  top: -10px;
+  color: var(--gold);
+  font-size: 1.4rem;
+}
+
+.section-kicker {
+  font-family: cursive;
+  font-size: 1.25rem;
+  color: var(--burgundy);
+  display: block;
+  margin-bottom: 2px;
+  transform: rotate(-2deg);
+}
+
+
+/* ---------- GOLD OUTLINE RING ---------- */
+
+.gold-ring {
+  position: absolute;
+  border: 1px solid rgba(200, 165, 106, 0.35);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+
+/* ---------- BUTTON POLISH ---------- */
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.13);
+  transform: translateX(-105%) skewX(-20deg);
+  transition: transform 0.4s ease;
+}
+
+.btn:hover::after {
+  transform: translateX(105%) skewX(-20deg);
+}
+
+
+/* ---------- WHIMSICAL CREAM SECTION ---------- */
+
+.whimsy-cream {
+  position: relative;
+  overflow: hidden;
+}
+
+.whimsy-cream::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  right: -120px;
+  top: -100px;
+  border: 1px solid rgba(69, 20, 37, 0.12);
+  border-radius: 50%;
+}
+
+.whimsy-cream::after {
+  content: "✦";
+  position: absolute;
+  left: 8%;
+  bottom: 8%;
+  font-size: 2rem;
+  color: rgba(200, 165, 106, 0.75);
+}
+
+
+/* ---------- MOBILE WHIMSY ---------- */
+
+@media (max-width: 850px) {
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .hero-art {
+    min-height: 210px;
+  }
+
+  .hero-art-circle {
+    width: 180px;
+    height: 180px;
+    right: 8%;
+  }
+
+  .hero-orbit {
+    width: 230px;
+    height: 110px;
+    right: 1%;
+    top: 55px;
+  }
+
+  .vibe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sparkle {
+    opacity: 0.6;
+  }
+
+  .hero-whimsy::before {
+    inset: 12px;
+  }
+}
