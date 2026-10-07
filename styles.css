@@ -732,3 +732,206 @@ h3 {
     inset: 12px;
   }
 }
+/* =========================================================
+   NEXT HOMEPAGE SECTIONS — WHIMSICAL LAYER
+   ========================================================= */
+
+
+/* ---------- EXPLORE SECTION ---------- */
+
+.explore-whimsy {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(200, 165, 106, 0.10), transparent 18%),
+    radial-gradient(circle at 90% 82%, rgba(69, 20, 37, 0.06), transparent 22%),
+    var(--cream-light);
+}
+
+.explore-whimsy::before {
+  content: "✦";
+  position: absolute;
+  top: 55px;
+  right: 8%;
+  font-size: 2.2rem;
+  color: rgba(200, 165, 106, 0.65);
+}
+
+.explore-whimsy::after {
+  content: "♡";
+  position: absolute;
+  bottom: 55px;
+  left: 6%;
+  font-size: 2rem;
+  color: rgba(69, 20, 37, 0.30);
+  transform: rotate(-12deg);
+}
+
+.explore-note {
+  font-family: cursive;
+  font-size: 1.15rem;
+  color: var(--burgundy);
+  display: inline-block;
+  transform: rotate(-3deg);
+  margin-bottom: 8px;
+}
+
+
+/* ---------- FEATURED SHOP ---------- */
+
+.shop-feature {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(247, 231, 206, 1), rgba(255, 247, 234, 1));
+}
+
+.shop-feature::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  right: -90px;
+  top: -80px;
+  border-radius: 50%;
+  border: 1px solid rgba(69, 20, 37, 0.12);
+}
+
+.shop-feature::after {
+  content: "✦";
+  position: absolute;
+  right: 11%;
+  bottom: 14%;
+  color: var(--gold);
+  font-size: 2.4rem;
+}
+
+.shop-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.shop-art {
+  position: relative;
+  min-height: 320px;
+}
+
+.shop-card-art {
+  position: absolute;
+  width: 210px;
+  height: 260px;
+  background: var(--burgundy);
+  border-radius: 28px 28px 28px 8px;
+  box-shadow: var(--shadow);
+}
+
+.shop-card-art.one {
+  left: 15px;
+  top: 10px;
+  transform: rotate(-7deg);
+}
+
+.shop-card-art.two {
+  left: 135px;
+  top: 55px;
+  background: var(--gold-pale);
+  transform: rotate(6deg);
+}
+
+.shop-card-art.three {
+  left: 250px;
+  top: 25px;
+  background: var(--cream);
+  border: 1px solid rgba(69, 20, 37, 0.12);
+  transform: rotate(-2deg);
+}
+
+.shop-art-label {
+  position: absolute;
+  right: 25px;
+  bottom: 8px;
+  font-family: cursive;
+  color: var(--burgundy);
+  font-size: 1.15rem;
+  transform: rotate(-4deg);
+}
+
+
+/* ---------- BRAND STATEMENT ---------- */
+
+.statement-whimsy {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 30%, rgba(200, 165, 106, 0.10), transparent 19%),
+    radial-gradient(circle at 85% 70%, rgba(101, 39, 67, 0.30), transparent 24%),
+    var(--burgundy);
+}
+
+.statement-whimsy::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(224, 199, 149, 0.18);
+  border-radius: 50%;
+  right: -170px;
+  top: -150px;
+}
+
+.statement-whimsy::after {
+  content: "✦";
+  position: absolute;
+  left: 8%;
+  bottom: 14%;
+  font-size: 2.6rem;
+  color: var(--gold-pale);
+}
+
+.statement-wrap {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.statement-script {
+  display: inline-block;
+  font-family: cursive;
+  color: var(--gold-pale);
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  transform: rotate(-3deg);
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 850px) {
+
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-art {
+    min-height: 250px;
+  }
+
+  .shop-card-art {
+    width: 150px;
+    height: 190px;
+  }
+
+  .shop-card-art.one {
+    left: 0;
+  }
+
+  .shop-card-art.two {
+    left: 90px;
+  }
+
+  .shop-card-art.three {
+    left: 180px;
+  }
+}
