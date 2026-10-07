@@ -627,10 +627,13 @@ h3 {
   font-size: 1.25rem;
   color: var(--burgundy);
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 14px;
   transform: rotate(-2deg);
 }
-
+.section-kicker + .eyebrow {
+  display: block;
+  margin-bottom: 12px;
+}
 
 /* ---------- GOLD OUTLINE RING ---------- */
 
