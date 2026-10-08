@@ -2008,3 +2008,155 @@ h3 {
     align-items: center;
   }
 }
+/* =========================================================
+   CLEANUP PASS — CARD TEXT + OVERLAP FIXES
+   ========================================================= */
+
+/* General card text safety */
+
+.product-card-label,
+.handmade-frame-label,
+.blog-paper-label,
+.resource-label,
+.about-frame-label,
+.gallery-tile-label {
+  max-width: calc(100% - 40px);
+  line-height: 1.12;
+  overflow-wrap: break-word;
+}
+
+/* SHOP CARDS */
+
+.product-card-label {
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  font-size: 1.15rem;
+}
+
+.shop-hand-note {
+  right: 5px;
+  top: 360px;
+  max-width: 180px;
+  text-align: center;
+}
+
+/* HANDCRAFTED CARDS */
+
+.handmade-frame-label {
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  font-size: 1.05rem;
+}
+
+.handmade-note {
+  left: 46%;
+  bottom: -5px;
+  max-width: 190px;
+  text-align: center;
+}
+
+/* BLOG CARDS */
+
+.blog-paper-label {
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.blog-note {
+  left: 39%;
+  bottom: -18px;
+  max-width: 210px;
+  text-align: center;
+}
+
+/* RESOURCES */
+
+.resource-label {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  max-width: 155px;
+}
+
+.resources-note {
+  right: 2%;
+  top: 13%;
+  max-width: 170px;
+  text-align: center;
+}
+
+/* ABOUT */
+
+.about-frame-label {
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  font-size: 1rem;
+}
+
+.about-frame-main .about-frame-label {
+  max-width: 220px;
+}
+
+.about-frame-small .about-frame-label {
+  max-width: 135px;
+}
+
+.about-frame-small {
+  z-index: 3;
+}
+
+.about-frame-main {
+  z-index: 2;
+}
+
+.about-note {
+  z-index: 4;
+}
+
+/* GALLERY */
+
+.gallery-tile-label {
+  max-width: calc(100% - 44px);
+  font-size: 1.1rem;
+}
+
+/* KEEP DECORATIVE TEXT FROM COVERING FUNCTIONAL TEXT */
+
+.shop-hand-note,
+.handmade-note,
+.blog-note,
+.resources-note,
+.about-note {
+  pointer-events: none;
+}
+
+/* MOBILE CLEANUP */
+
+@media (max-width: 600px) {
+
+  .shop-hand-note,
+  .handmade-note,
+  .blog-note,
+  .resources-note,
+  .about-note {
+    position: static;
+    display: block;
+    margin-top: 18px;
+    transform: rotate(-2deg);
+    text-align: left;
+    max-width: none;
+  }
+
+  .product-card-label,
+  .handmade-frame-label,
+  .blog-paper-label,
+  .resource-label,
+  .about-frame-label,
+  .gallery-tile-label {
+    font-size: 0.95rem;
+  }
+}
