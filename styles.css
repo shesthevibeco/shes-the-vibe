@@ -2160,3 +2160,220 @@ h3 {
     font-size: 0.95rem;
   }
 }
+/* =========================================================
+   COLLAGE CLEANUP — FINAL POSITIONING
+   ========================================================= */
+
+
+/* ---------- SHOP ---------- */
+
+/* Give the collage a little more room */
+.shop-collage {
+  min-height: 500px;
+}
+
+/* Keep the handwritten note OFF the Everyday Vibes card */
+.shop-hand-note {
+  top: auto;
+  right: 25px;
+  bottom: 5px;
+  width: 190px;
+  max-width: 190px;
+  text-align: center;
+  z-index: 10;
+}
+
+/* Move Everyday Vibes label safely toward bottom-left */
+.product-card-three .product-card-label {
+  left: 22px;
+  right: auto;
+  bottom: 24px;
+  max-width: 120px;
+}
+
+
+/* ---------- HANDCRAFTED ---------- */
+
+.handmade-collage {
+  min-height: 520px;
+}
+
+/* Permanent Jewelry is already fine */
+.handmade-frame-one .handmade-frame-label {
+  left: 20px;
+  bottom: 20px;
+}
+
+/* Waist Beads label currently disappears behind the burgundy card.
+   Move it to the TOP of its own card instead. */
+.handmade-frame-two .handmade-frame-label {
+  top: 32px;
+  left: 28px;
+  right: 22px;
+  bottom: auto;
+  max-width: 145px;
+}
+
+/* Keep Handmade Goods comfortably inside its card */
+.handmade-frame-three .handmade-frame-label {
+  left: 24px;
+  right: 20px;
+  bottom: 24px;
+  max-width: 150px;
+}
+
+/* Move handwritten decoration BELOW the collage instead of across a card */
+.handmade-note {
+  left: 42%;
+  bottom: -10px;
+  width: 190px;
+  max-width: 190px;
+  text-align: center;
+  z-index: 10;
+}
+
+.handmade-line {
+  left: 38%;
+  bottom: 14px;
+}
+
+
+/* ---------- BLOG ---------- */
+
+.blog-editorial {
+  min-height: 470px;
+}
+
+/* Personal Essays */
+.blog-paper-one .blog-paper-label {
+  left: 22px;
+  bottom: 22px;
+}
+
+/* Thoughts + Reflections is being hidden by the burgundy card.
+   Put it toward the upper-left of its own paper. */
+.blog-paper-two .blog-paper-label {
+  top: 35px;
+  left: 28px;
+  right: 30px;
+  bottom: auto;
+  max-width: 145px;
+}
+
+/* Stories Worth Telling */
+.blog-paper-three .blog-paper-label {
+  left: 22px;
+  bottom: 22px;
+  max-width: 150px;
+}
+
+/* Move script completely below the paper stack */
+.blog-note {
+  left: 28%;
+  bottom: -5px;
+  width: 220px;
+  max-width: 220px;
+  text-align: center;
+  z-index: 10;
+}
+
+
+/* ---------- RESOURCES ---------- */
+
+.resource-stack {
+  min-height: 450px;
+}
+
+/* Keep all labels well inside their sheets */
+.resource-one .resource-label {
+  max-width: 120px;
+}
+
+.resource-two .resource-label {
+  max-width: 145px;
+}
+
+.resource-three .resource-label {
+  max-width: 135px;
+}
+
+/* This note is cute — just pull it away from the cards slightly */
+.resources-note {
+  top: 3%;
+  right: 0;
+  width: 165px;
+  max-width: 165px;
+  text-align: center;
+  z-index: 10;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about-art {
+  min-height: 500px;
+}
+
+/* The small gold card can remain layered in front */
+.about-frame-small {
+  z-index: 4;
+}
+
+/* Main burgundy arch stays behind */
+.about-frame-main {
+  z-index: 2;
+}
+
+/* THIS is the big fix:
+   move creator/writer/maker away from where the gold card overlaps */
+.about-frame-main .about-frame-label {
+  top: 60px;
+  right: 28px;
+  left: auto;
+  bottom: auto;
+  width: 125px;
+  max-width: 125px;
+  text-align: right;
+  line-height: 1.35;
+}
+
+/* Gold card wording stays safely inside */
+.about-frame-small .about-frame-label {
+  left: 20px;
+  right: 18px;
+  bottom: 20px;
+  max-width: 125px;
+}
+
+/* Keep handwritten note outside the artwork */
+.about-note {
+  right: 12px;
+  bottom: 10px;
+  z-index: 10;
+}
+
+
+/* ---------- SMALLER SCREEN SAFETY ---------- */
+
+@media (max-width: 600px) {
+
+  .shop-collage,
+  .handmade-collage,
+  .blog-editorial,
+  .resource-stack,
+  .about-art {
+    min-height: 400px;
+  }
+
+  .shop-hand-note,
+  .handmade-note,
+  .blog-note,
+  .resources-note,
+  .about-note {
+    position: static;
+    width: auto;
+    max-width: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+}
