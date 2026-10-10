@@ -1243,23 +1243,19 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.85rem;
 }
 
-/* Resource library index — editorial list, not shop cards */
-.resource-index { border-top: 1px solid rgba(176,141,79,.35); }
-.resource-row {
-  display: flex; align-items: center; justify-content: space-between; gap: 24px;
-  padding: 28px 4px; border-bottom: 1px solid rgba(176,141,79,.35);
-}
-.resource-row h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin: 0 0 8px; color: #451425; }
-.resource-row p { margin: 0; color: #5a5a5a; line-height: 1.7; max-width: 520px; }
-.resource-link {
-  font-family: 'Jost', sans-serif; font-size: .95rem; letter-spacing: .08em; text-transform: uppercase;
-  color: #b08d4f; text-decoration: none; white-space: nowrap;
-}
-.resource-link:hover { color: #451425; }
-.resource-status {
-  font-family: 'Jost', sans-serif; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase;
-  color: #999; font-style: italic; white-space: nowrap;
-}
 @media (max-width: 640px) {
-  .resource-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+  
+/* Resource journey — soft, guided, not shoppy */
+.resource-journey { text-align: center; }
+.journey-step { padding: 36px 12px; border-bottom: 1px solid rgba(176,141,79,.25); }
+.journey-step:last-child { border-bottom: none; }
+.journey-feeling {
+  font-family: 'Pinyon Script', cursive; font-size: 1.5rem; color: #b08d4f; margin: 0 0 10px;
 }
+.journey-step h3 { font-family: 'Playfair Display', serif; font-size: 1.7rem; margin: 0 0 10px; color: #451425; }
+.journey-step h3 a { color: #451425; text-decoration: none; border-bottom: 1px solid #b08d4f; padding-bottom: 2px; }
+.journey-step h3 a:hover { color: #b08d4f; }
+.journey-step p { margin: 0 auto; color: #5a5a5a; line-height: 1.8; max-width: 480px; }
+.journey-step p.journey-feeling { max-width: none; }
+.journey-soon h3 { color: #999; }
+.journey-soon p { color: #999; }
