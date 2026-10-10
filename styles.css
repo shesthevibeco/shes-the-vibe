@@ -85,6 +85,17 @@ a { text-decoration: none; color: inherit; }
 
 .btn-burgundy:hover { background: var(--burgundy-900); }
 
+.btn-outline {
+  background: transparent;
+  color: var(--burgundy-800);
+  border: 1px solid var(--gold);
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--burgundy-950);
+}
+
 /* ---------- Header ---------- */
 
 .site-header {
@@ -950,6 +961,15 @@ a { text-decoration: none; color: inherit; }
 }
 
 .post-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--burgundy-900);
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.post-body h2 {
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
