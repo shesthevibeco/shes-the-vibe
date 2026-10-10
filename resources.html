@@ -3,10 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources | She's the Vibe</title>
+  <meta name="description" content="Free resources from She's The Vibe — planning tools and little gifts to help you organize your life beautifully.">
+
+  <title>Free Resources — She's The Vibe</title>
+
+  <link rel="icon" type="image/png" href="Icon.png">
+  <link rel="apple-touch-icon" href="Icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Pinyon+Script&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand">
+        <svg class="brand-crown" viewBox="0 0 40 28" aria-hidden="true">
+          <path d="M4 24 L2 8 L11 14 L20 2 L29 14 L38 8 L36 24 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="2" cy="8" r="2.2" fill="currentColor"/>
+          <circle cx="20" cy="2" r="2.2" fill="currentColor"/>
+          <circle cx="38" cy="8" r="2.2" fill="currentColor"/>
+          <rect x="4" y="24" width="32" height="3" rx="1.5" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">SHE&rsquo;S THE VIBE</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-icons">
+        <a href="#" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </a>
+        <a href="#" aria-label="Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+        </a>
+        <a href="#" aria-label="Shopping bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero-script">Little gifts, on the house</p>
+        <h1 class="page-title">Free Resources</h1>
+        <p class="page-sub">Tools and treats to help you plan beautifully — more dropping soon.</p>
+      </div>
+    </section>
+
+    <!-- ============ RESOURCES ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+          <article class="product-card">
+            <div class="product-photo"><img src="vibe-dashboard.png" alt="The Vibe Dashboard preview"></div>
+            <h3>The Vibe Dashboard Preview</h3>
+            <p class="product-sub">A Peek Inside the System</p>
+            <p class="service-desc">Take a look inside our smart life-planning system — tasks, bills, savings, and goals, all in one beautiful place.</p>
+            <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="btn btn-burgundy">Shop on Etsy</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo"><img src="mockups/photos/journal-hardcover-luxe.webp" alt="Planning with intention journal"></div>
+            <h3>Planning With Intention</h3>
+            <p class="product-sub">Guide &middot; Printable</p>
+            <span class="badge-soon">Coming Soon</span>
+            <p class="service-desc">Our gentle guide to planning a week that actually feels like yours.</p>
+            <a href="#newsletter" class="btn btn-burgundy">Notify Me</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo"><img src="mockups/photos/notebook-spiral-luxe.webp" alt="The Vibe Checklist notebook"></div>
+            <h3>The Vibe Checklist</h3>
+            <p class="product-sub">Checklist &middot; Printable</p>
+            <span class="badge-soon">Coming Soon</span>
+            <p class="service-desc">The daily checklist our community swears by — coming to your inbox soon.</p>
+            <a href="#newsletter" class="btn btn-burgundy">Notify Me</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOIN THE VIBE ============ -->
+    <section class="join" id="newsletter">
+      <div class="container join-inner">
+        <h2>Join the Vibe</h2>
+        <p>Be the first to know about new drops, exclusive offers, and all things She&rsquo;s The Vibe.</p>
+        <form class="join-form" action="#" method="post" onsubmit="return false;">
+          <label class="sr-only" for="join-email">Your email address</label>
+          <input id="join-email" type="email" name="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-burgundy">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <svg class="brand-crown" viewBox="0 0 40 28" aria-hidden="true">
+          <path d="M4 24 L2 8 L11 14 L20 2 L29 14 L38 8 L36 24 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="2" cy="8" r="2.2" fill="currentColor"/>
+          <circle cx="20" cy="2" r="2.2" fill="currentColor"/>
+          <circle cx="38" cy="8" r="2.2" fill="currentColor"/>
+          <rect x="4" y="24" width="32" height="3" rx="1.5" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">SHE&rsquo;S THE VIBE</span>
+      </div>
+
+      <nav class="footer-col" aria-label="Shop links">
+        <h4>Shop</h4>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">All Products</a>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Digital Dashboards</a>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Notebooks &amp; Stationery</a>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Cozy Apparel</a>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Handmade &amp; Jewelry</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="About links">
+        <h4>About</h4>
+        <a href="about.html">Our Story</a>
+        <a href="about.html">Why She&rsquo;s The Vibe</a>
+        <a href="about.html">Community</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Stay Connected</h4>
+        <div class="social-row">
+          <a href="https://instagram.com/shesthevibeco" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@shes.the.vibe.co" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.3 1.9 3.8 4.2 4v3c-1.6 0-3-.5-4.2-1.3v6.6c0 3.5-2.6 6-6 6-3.2 0-5.8-2.6-5.8-5.8 0-3.3 2.7-5.9 6-5.9.3 0 .7 0 1 .1v3.1c-.3-.1-.7-.2-1-.2-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.8 2.8 2.8 1.7 0 3-1.3 3-3V3h2.9z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/shesthevibe.co" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5v4h3v7h4v-7h3l1-4h-4V7.8c0-.9.6-1.3 1.4-1.3H15V3z"/></svg>
+          </a>
+          <a href="https://www.etsy.com/shop/ShesTheVibe" aria-label="Etsy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 3h8v3h-2v12h2v3H8v-3h2V6H8V3z"/></svg>
+          </a>
+        </div>
+        <p class="footer-script">Good Energy<br>Looks Good On You &hearts;</p>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 She&rsquo;s The Vibe. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+      </nav>
+    </div>
+  </footer>
 
 </body>
 </html>
