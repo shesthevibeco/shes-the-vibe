@@ -1314,3 +1314,14 @@ a { text-decoration: none; color: inherit; }
 
 .flourish-divider { text-align: center; color: #b08d4f; margin: 44px 0 6px; }
 .flourish-divider svg { width: min(220px, 62%); height: auto; }
+
+/* ---------- Site-wide whimsy utilities ---------- */
+/* Add class="page-hero sparkle-hero" + 4 sparkle SVGs to any hero for twinkling sparkles */
+.sparkle-hero { position: relative; overflow: hidden; }
+/* Generic gold line-art icon block for section headers (46px, gold) */
+.whimsy-icon { width: 46px; height: 46px; margin: 4px auto 14px; color: #b08d4f; }
+.whimsy-icon svg { width: 100%; height: 100%; display: block; }
+/* Soft alternating gold tint for sections */
+.tint-soft { background: rgba(176,141,79,.06); border-radius: 18px; }
+/* Small centered gold sparkle ornament for tight transitions */
+.sparkle-ornament { text-align: center; color: #b08d4f; margin: 8px 0; font-size: 1.1rem; letter-spacing: .6em; }
