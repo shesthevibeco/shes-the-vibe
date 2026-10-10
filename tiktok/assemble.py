@@ -12,11 +12,9 @@ def build(name, slides):
     inputs, filters = [], []
     for i, (fn, dur) in enumerate(slides):
         inputs += ["-loop", "1", "-t", str(dur), "-i", os.path.join(S, fn)]
-        frames = int(dur * FPS)
+        # static slide at 30fps, no zoom (fast)
         filters.append(
-            f"[{i}:v]scale=1350:2400,"
-            f"zoompan=z='1+0.07*on/{frames}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps={FPS},"
-            f"format=yuv420p[v{i}]"
+            f"[{i}:v]scale=1080:1920,fps={FPS},format=yuv420p[v{i}]"
         )
     # xfade chain
     chain, acc, total = "[v0]", 0.0, 0.0
