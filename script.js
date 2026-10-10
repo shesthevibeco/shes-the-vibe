@@ -1,5 +1,7 @@
 // She's the Vibe main JavaScript
 document.addEventListener('DOMContentLoaded', function () {
+  var NEWSLETTER_URL = 'https://script.google.com/macros/s/AKfycbwOdC3gf-IYDoztdgeZ_mXJd_mQ_0I-2dQszeyVEO7C1kLXgGmGPPj3L8hRgo_0SwDa/exec';
+
   // Mobile menu toggle
   var toggle = document.querySelector('.menu-toggle');
   var menu = document.getElementById('mobileMenu');
@@ -19,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Newsletter forms -> Google Sheet via Apps Script
-  var NEWSLETTER_URL = 'https://script.google.com/macros/s/AKfycbwX4P7tXfv6QadbwGLJLfiFuLtxZuKTiTIXVofPooTxU_5qFaVBY2J-vRdypUbxXLLJuA/exec';
   document.querySelectorAll('.join-form').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -41,6 +42,33 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.disabled = false;
         btn.textContent = original;
         alert('Hmm, that didn\'t go through — please try again.');
+      });
+    });
+  });
+
+  // Contact form -> same backend, routed to Contact Messages tab
+  document.querySelectorAll('.contact-form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = form.querySelector('[name="name"]').value.trim();
+      var email = form.querySelector('[name="email"]').value.trim();
+      var message = form.querySelector('[name="message"]').value.trim();
+      if (!name || !email || !message) return;
+      var btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      var original = btn.textContent;
+      btn.textContent = 'Sending...';
+      fetch(NEWSLETTER_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ type: 'contact', name: name, email: email, message: message, page: window.location.pathname })
+      }).then(function () {
+        form.innerHTML = '<p class="join-success">Message sent! I read everything myself and will get back to you soon.</p>';
+      }).catch(function () {
+        btn.disabled = false;
+        btn.textContent = original;
+        alert('Hmm, that didn\'t go through — please try again or email Shesthevibeco@gmail.com directly.');
       });
     });
   });
