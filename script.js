@@ -1,6 +1,6 @@
 // She's the Vibe main JavaScript
 document.addEventListener('DOMContentLoaded', function () {
-  var NEWSLETTER_URL = 'https://script.google.com/macros/s/AKfycbyO46HE52l36uu0ZFM24XRDH6jcZXhpA3WZ18mIKYFDPKNdYtOSSAXswvEz-OXiRyDj/exec';
+  var NEWSLETTER_URL = 'https://script.google.com/macros/s/AKfycbwTksMvGsameSdpLYK4lb1yNgscISiizj71g9x54EaaFXbrP-6S4heRjxfW3ITHCHU1/exec';
 
   // Mobile menu toggle
   var toggle = document.querySelector('.menu-toggle');
