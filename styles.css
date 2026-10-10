@@ -798,7 +798,11 @@ a { text-decoration: none; color: inherit; }
     linear-gradient(160deg, var(--burgundy-900), var(--burgundy-950) 70%);
   color: var(--cream);
   text-align: center;
-  padding: 72px 0 66px;
+  padding: 72px 24px 66px;
+}
+
+.page-hero .container {
+  overflow-wrap: break-word;
 }
 
 .page-hero .hero-script { margin: 0 0 14px; }
@@ -1244,10 +1248,6 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 1020px) {
   .menu-toggle { display: block; }
   .header-inner { gap: 12px; }
-  .main-nav { gap: 18px; }
-  .main-nav a { font-size: 0.68rem; letter-spacing: 0.14em; }
-}
-@media (max-width: 760px) {
   .main-nav { display: none; }
 }
 
