@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Newsletter forms -> Google Sheet via Apps Script
+  // Newsletter forms -> Google Sheet via Apps Script (Subscribers tab)
   document.querySelectorAll('.join-form').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Contact form -> same backend, routed to Contact Messages tab
+  // Contact form -> Contact Messages tab
   document.querySelectorAll('.contact-form').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -69,6 +69,32 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.disabled = false;
         btn.textContent = original;
         alert('Hmm, that didn\'t go through — please try again or email Shesthevibeco@gmail.com directly.');
+      });
+    });
+  });
+
+  // Book waitlist form -> Book Interest tab
+  document.querySelectorAll('.book-interest-form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = form.querySelector('[name="name"]').value.trim();
+      var email = form.querySelector('[name="email"]').value.trim();
+      if (!name || !email) return;
+      var btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      var original = btn.textContent;
+      btn.textContent = 'Adding you...';
+      fetch(NEWSLETTER_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ type: 'book-interest', name: name, email: email, page: window.location.pathname })
+      }).then(function () {
+        form.innerHTML = '<p class="join-success">You\'re on the list! You\'ll be first to know when the book drops.</p>';
+      }).catch(function () {
+        btn.disabled = false;
+        btn.textContent = original;
+        alert('Hmm, that didn\'t go through — please try again.');
       });
     });
   });
