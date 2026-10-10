@@ -101,7 +101,8 @@ function handleNewSubscriber(ss, data, timestamp) {
   }
 
   // Avoid duplicate welcome emails: check if this email is already subscribed.
-  var existing = sheet.getRange(1, 1, sheet.getLastRow(), 1).getValues().flat();
+  // Note: email is in column B (index 2) — column A is the timestamp.
+  var existing = sheet.getRange(1, 2, sheet.getLastRow(), 1).getValues().flat();
   var alreadySubscribed = existing.some(function (cell) {
     return String(cell).trim().toLowerCase() === email.toLowerCase();
   });
