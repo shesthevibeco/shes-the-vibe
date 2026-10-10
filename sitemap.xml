@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://shesthevibe.co/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://shesthevibe.co/shop.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://shesthevibe.co/book.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shesthevibe.co/services.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shesthevibe.co/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shesthevibe.co/post-no-contact.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://shesthevibe.co/post-words-hurt.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://shesthevibe.co/post-silence-to-script.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://shesthevibe.co/resources.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://shesthevibe.co/resources-discover.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shesthevibe.co/resources-journal-prompts.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shesthevibe.co/resources-local.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shesthevibe.co/resources-worksheets.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shesthevibe.co/resources-thinking.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shesthevibe.co/resources-parenting.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shesthevibe.co/about.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shesthevibe.co/gallery.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://shesthevibe.co/testimonials.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://shesthevibe.co/contact.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://shesthevibe.co/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://shesthevibe.co/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://shesthevibe.co/shipping.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://shesthevibe.co/returns.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>
