@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }).catch(function () {
         btn.disabled = false;
         btn.textContent = original;
-        alert('Hmm, that didn\'t go through — please try again or email Shesthevibeco@gmail.com directly.');
+        alert('Hmm, that didn\'t go through — please try again or email christina@shesthevibe.co directly.');
       });
     });
   });
