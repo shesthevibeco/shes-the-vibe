@@ -3,783 +3,305 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="She's The Vibe — more than a brand, it's a lifestyle. Digital dashboards, notebooks, cozy apparel, artisan soaps and handmade jewelry for women who do it all.">
 
-  <meta name="description" content="She's the Vibe — a creative lifestyle space for things to wear, use, read, create with, and make life feel a little more like you.">
-
-  <title>She's the Vibe</title>
+  <title>She's The Vibe — More Than a Brand, It's a Lifestyle</title>
 
   <link rel="icon" type="image/png" href="Icon.png">
   <link rel="apple-touch-icon" href="Icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Pinyon+Script&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- ============ HEADER ============ -->
   <header class="site-header">
-    <div class="container nav-wrap">
+    <div class="container header-inner">
 
-      <a href="index.html" class="logo">SHE'S THE VIBE</a>
+      <a href="index.html" class="brand">
+        <svg class="brand-crown" viewBox="0 0 40 28" aria-hidden="true">
+          <path d="M4 24 L2 8 L11 14 L20 2 L29 14 L38 8 L36 24 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="2" cy="8" r="2.2" fill="currentColor"/>
+          <circle cx="20" cy="2" r="2.2" fill="currentColor"/>
+          <circle cx="38" cy="8" r="2.2" fill="currentColor"/>
+          <rect x="4" y="24" width="32" height="3" rx="1.5" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">SHE&rsquo;S THE VIBE</span>
+      </a>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="blog.html">Blog</a>
-        <a href="resources.html">Resources</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="testimonials.html">Testimonials</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Shop</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
 
+      <div class="header-icons">
+        <a href="#" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </a>
+        <a href="#" aria-label="Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+        </a>
+        <a href="#" aria-label="Shopping bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        </a>
+      </div>
+
     </div>
   </header>
 
+  <main>
 
-  <!-- HERO -->
-<section class="hero-whimsy">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
 
-  <div class="blob blob-gold blob-one"></div>
-  <div class="blob blob-plum blob-two"></div>
+        <div class="hero-visual">
+          <img src="brand-illustration.png" alt="She's The Vibe brand illustration">
+        </div>
 
-  <span class="sparkle sparkle-large sparkle-one">✦</span>
-  <span class="sparkle sparkle-small sparkle-two">✧</span>
-  <span class="sparkle sparkle-three">✦</span>
+        <div class="hero-copy">
+          <svg class="hero-crown" viewBox="0 0 40 28" aria-hidden="true">
+            <path d="M4 24 L2 8 L11 14 L20 2 L29 14 L38 8 L36 24 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="2" cy="8" r="2.2" fill="currentColor"/>
+            <circle cx="20" cy="2" r="2.2" fill="currentColor"/>
+            <circle cx="38" cy="8" r="2.2" fill="currentColor"/>
+            <rect x="4" y="24" width="32" height="3" rx="1.5" fill="currentColor"/>
+          </svg>
+          <h1>She&rsquo;s<br>The Vibe</h1>
+          <p class="hero-script">More Than a Brand<br>It&rsquo;s a Lifestyle</p>
+          <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="btn btn-gold">Shop on Etsy</a>
+        </div>
 
-  <div class="container hero-layout">
-
-    <div class="hero-copy">
-
-      <p class="eyebrow">Practical. Pretty. You.</p>
-
-      <h1>She's the Vibe</h1>
-
-      <h3 class="script">
-        A woman. A vision. More than one world.
-      </h3>
-
-      <div class="doodle-divider"></div>
-
-      <p class="lead">
-        Things to wear, use, read, create with, and make life feel
-        a little more like you.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#explore" class="btn btn-primary">
-          Explore the Vibe
-        </a>
-
-        <a href="shop.html" class="btn btn-outline">
-          Shop the Vibe
-        </a>
-      </div>
-
-    </div>
-
-
-    <div class="hero-art">
-
-      <div class="hero-art-circle"></div>
-
-      <div class="hero-orbit"></div>
-
-      <div class="hero-mini-heart">♡</div>
-
-      <div class="hero-note">
-        you found the place ✦
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-    <!-- CATEGORY STRIP -->
-    <section class="section-burgundy" style="padding: 24px 0;">
-      <div class="container">
-        <p style="text-align:center; letter-spacing:.2em; font-weight:700;">
-          SHOP &nbsp; • &nbsp; READ &nbsp; • &nbsp; CREATE &nbsp; • &nbsp; LIVE &nbsp; • &nbsp; GROW
-        </p>
-      </div>
-    </section>
-
-
-    <!-- INTRO -->
-    <section class="section section-cream whimsy-cream">
-      <div class="container">
-<span class="section-kicker">for every version of you</span>
-        <p class="eyebrow">Welcome to the Vibe</p>
-
-        <h2>One woman. Many Vibes. A place for all of it.</h2>
-
-        <p class="lead">
-          She's the Vibe is a creative lifestyle space for women who were never meant
-          to fit into one box. Shop something beautiful, find something useful,
-          read something real, or discover whatever I'm creating next.
-        </p>
+        <div class="hero-words" aria-hidden="true">
+          <span>Confident</span>
+          <span>Beautiful</span>
+          <span>Disciplined</span>
+          <span>Successful</span>
+          <span>Soft</span>
+          <span class="hero-words-accent">That Girl</span>
+        </div>
 
       </div>
     </section>
 
+    <!-- ============ TRUST BADGES ============ -->
+    <section class="trust">
+      <div class="container trust-grid">
 
-    <!-- EXPLORE -->
-    <section class="section explore-whimsy" id="explore">
-      <div class="container">
-<span class="explore-note">pick your corner of the universe ✦</span>
-        <p class="eyebrow">Explore</p>
-        <h2>Find Your Vibe</h2>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          <div><strong>Instant</strong><span>Digital Downloads</span></div>
+        </div>
 
-        <div class="vibe-grid">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-9-9c-1.2-2.7.5-6 3.5-6 2 0 3.5 1.5 5.5 4 2-2.5 3.5-4 5.5-4 3 0 4.7 3.3 3.5 6-2 4.5-9 9-9 9z"/></svg>
+          <div><strong>Handmade</strong><span>With Love</span></div>
+        </div>
 
-  <article class="vibe-card">
-    <div class="vibe-icon">✦</div>
-    <h3>Shop the Vibe</h3>
-    <p>
-      Digital tools, stationery, apparel, jewelry,
-      handcrafted goods, gifts and more.
-    </p>
-    <a href="shop.html">Shop →</a>
-  </article>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.5-9-9c-1.2-2.7.5-6 3.5-6 2 0 3.5 1.5 5.5 4 2-2.5 3.5-4 5.5-4 3 0 4.7 3.3 3.5 6-2 4.5-9 9-9 9z"/></svg>
+          <div><strong>Women Owned</strong><span>&amp; Operated</span></div>
+        </div>
 
-
-  <article class="vibe-card">
-    <div class="vibe-icon">✎</div>
-    <h3>Read the Vibe</h3>
-    <p>
-      Personal essays, stories, reflections, creativity,
-      books and whatever I'm writing lately.
-    </p>
-    <a href="blog.html">Read the Blog →</a>
-  </article>
-
-
-  <article class="vibe-card">
-    <div class="vibe-icon">☑</div>
-    <h3>Use the Vibe</h3>
-    <p>
-      Resources, printables, worksheets, guides
-      and practical tools created for real life.
-    </p>
-    <a href="resources.html">Browse Resources →</a>
-  </article>
-
-
-  <article class="vibe-card">
-    <div class="vibe-icon">♡</div>
-    <h3>Work With the Vibe</h3>
-    <p>
-      Coaching, permanent jewelry, custom work,
-      creative services and collaborations.
-    </p>
-    <a href="services.html">View Services →</a>
-  </article>
-
-
-  <article class="vibe-card">
-    <div class="vibe-icon">◇</div>
-    <h3>See the Vibe</h3>
-    <p>
-      Jewelry, handmade work, product styling,
-      events and pieces created in real life.
-    </p>
-    <a href="gallery.html">View Gallery →</a>
-  </article>
-
-
-  <article class="vibe-card">
-    <div class="vibe-icon">❝</div>
-    <h3>Feel the Vibe</h3>
-    <p>
-      Real words from customers, clients,
-      collaborators and people who've experienced the Vibe.
-    </p>
-    <a href="testimonials.html">Read Testimonials →</a>
-  </article>
-
-</div>
+        <div class="trust-item">
+          <svg viewBox="0 0 40 28" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 24 L2 8 L11 14 L20 2 L29 14 L38 8 L36 24 Z" stroke-linejoin="round"/><rect x="4" y="24" width="32" height="3" rx="1.5" fill="currentColor" stroke="none"/></svg>
+          <div><strong>A Community</strong><span>Of Confidence</span></div>
+        </div>
 
       </div>
     </section>
 
-    <!-- FEATURED SHOP -->
-<!-- FEATURED SHOP -->
-<section class="section shop-showcase">
-  <div class="container shop-showcase-layout">
+    <!-- ============ SHOP BY CATEGORY ============ -->
+    <section class="section categories">
+      <div class="container">
+        <h2 class="section-title"><span>Shop by Category</span></h2>
 
-    <div class="shop-copy">
+        <div class="category-grid">
 
-      <span class="section-kicker">pretty things, useful things, your things</span>
+          <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="category-card">
+            <div class="category-art cat-digital">
+              <img src="vibe-dashboard.png" alt="The Vibe Dashboard — digital life planning system">
+              <span>Digital Dashboards</span>
+            </div>
+            <div class="category-label">Digital Dashboards <span class="arrow">&rarr;</span></div>
+          </a>
 
-      <p class="eyebrow">Shop</p>
+          <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="category-card">
+            <div class="category-art cat-notebooks">
+              <img src="mockups/photos/journal-hardcover-luxe.webp" alt="She's The Vibe luxury hardcover journal">
+              <span>Notebooks &amp; Stationery</span>
+            </div>
+            <div class="category-label">Notebooks &amp; Stationery <span class="arrow">&rarr;</span></div>
+          </a>
 
-      <h2>Useful. Beautiful. A Little Extra.</h2>
+          <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="category-card">
+            <div class="category-art cat-apparel">
+              <img src="mockups/photos/sweatshirt-collegiate-coral.webp" alt="She's The Vibe collegiate sweatshirt">
+              <span>Cozy Apparel</span>
+            </div>
+            <div class="category-label">Cozy Apparel <span class="arrow">&rarr;</span></div>
+          </a>
 
-      <div class="doodle-divider"></div>
+          <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="category-card">
+            <div class="category-art cat-handmade">
+              <img src="mockups/photos/jewelry-pro-toggle-collage-stv.jpg" alt="She's The Vibe handmade jewelry">
+              <span>Handmade &amp; Jewelry</span>
+            </div>
+            <div class="category-label">Handmade &amp; Jewelry <span class="arrow">&rarr;</span></div>
+          </a>
 
-      <p class="lead">
-        Digital products, jewelry, handcrafted goods, stationery,
-        apparel, gifts and lifestyle pieces made to bring a little
-        more personality into everyday life.
-      </p>
-
-      <div style="margin-top:30px;">
-        <a href="shop.html" class="btn btn-primary">
-          Shop the Vibe
-        </a>
-      </div>
-
-    </div>
-
-
-    <div class="shop-collage">
-
-      <div class="product-card product-card-one">
-        <div class="product-card-label">
-          Digital<br>Vibes
         </div>
       </div>
+    </section>
 
-      <div class="product-card product-card-two">
-        <div class="product-card-label">
-          Handmade<br>Vibes
+    <!-- ============ FEATURED PRODUCTS ============ -->
+    <section class="section bestsellers">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title"><span>Featured Products</span></h2>
+          <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="view-all">View All &rarr;</a>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+            <div class="product-photo"><img src="vibe-dashboard.png" alt="The Vibe Dashboard — smart life system"></div>
+            <h3>The Vibe Dashboard</h3>
+            <p class="product-sub">Smart Life System &middot; Digital Download</p>
+            <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="btn btn-burgundy">Shop on Etsy</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo"><img src="mockups/photos/sweatshirt-collegiate-periwinkle.webp" alt="She's The Vibe collegiate sweatshirt in periwinkle"></div>
+            <h3>Collegiate Sweatshirt</h3>
+            <p class="product-sub">Unisex Garment-Dyed &middot; Cozy Apparel</p>
+            <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="btn btn-burgundy">Shop on Etsy</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo"><img src="mockups/photos/tote-signature.webp" alt="She's The Vibe signature canvas tote"></div>
+            <h3>Signature Tote</h3>
+            <p class="product-sub">Feminine Portrait &middot; Canvas Tote</p>
+            <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="btn btn-burgundy">Shop on Etsy</a>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo"><img src="mockups/photos/journal-hardcover-floral.webp" alt="Good Ideas Brighter Days hardcover journal"></div>
+            <h3>Good Ideas Journal</h3>
+            <p class="product-sub">Hardcover Matte &middot; Lined</p>
+            <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener" class="btn btn-burgundy">Shop on Etsy</a>
+          </article>
+
         </div>
       </div>
+    </section>
 
-      <div class="product-card product-card-three">
-        <div class="product-card-label">
-          Everyday<br>Vibes
+    <!-- ============ STORY ============ -->
+    <section class="story">
+      <div class="container story-grid">
+        <div class="story-copy">
+          <p class="story-script">Built for Women<br>Who Do It All</p>
+          <p class="story-text">
+            She&rsquo;s The Vibe is the space I never had growing up &mdash; where
+            every woman gets to be vibrantly herself without dimming for anybody.
+            From smart digital dashboards to pretty notebooks, cozy apparel, and
+            handmade goods, we create practical pieces that help you organize
+            your life and celebrate every vibe you bring to it.
+          </p>
+          <a href="about.html" class="btn btn-gold">Our Story</a>
+        </div>
+        <div class="story-visual" aria-hidden="true">
+          <span class="story-mark">She&rsquo;s<br>The Vibe</span>
+          <span class="story-heart">&hearts;</span>
         </div>
       </div>
+    </section>
 
-      <div class="shop-scribble"></div>
-
-      <div class="shop-hand-note">
-        a little pretty never hurt ♡
+    <!-- ============ JOIN THE VIBE ============ -->
+    <section class="join">
+      <div class="container join-inner">
+        <h2>Join the Vibe</h2>
+        <p>Be the first to know about new drops, exclusive offers, and all things She&rsquo;s The Vibe.</p>
+        <form class="join-form" action="#" method="post" onsubmit="return false;">
+          <label class="sr-only" for="join-email">Your email address</label>
+          <input id="join-email" type="email" name="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-burgundy">Subscribe</button>
+        </form>
       </div>
+    </section>
 
-    </div>
+  </main>
 
-  </div>
-</section>
-
-    <!-- PHILOSOPHY -->
-<section class="section philosophy-showcase">
-  <div class="container philosophy-layout">
-
-    <div class="philosophy-mark">
-      “
-    </div>
-
-    <div class="philosophy-copy">
-
-      <span class="philosophy-note">
-        you contain multitudes, babe
-      </span>
-
-      <p class="eyebrow">The Philosophy</p>
-
-      <h2>
-        You Were Never Supposed to Fit Into One Box.
-      </h2>
-
-      <div class="doodle-divider"></div>
-
-      <p class="lead">
-        You can be practical and creative. Ambitious and soft.
-        Organized and spontaneous. A professional, a mother,
-        a maker, a writer, a dreamer — and still be completely yourself.
-      </p>
-
-      <div class="philosophy-emphasis">
-        Neither was this brand.
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-    <!-- HANDCRAFTED -->
-<section class="section handcrafted-showcase">
-  <div class="container handcrafted-layout">
-
-    <div class="handmade-collage">
-
-      <div class="handmade-frame handmade-frame-one">
-        <div class="handmade-frame-label">
-          Permanent Jewelry
-        </div>
-      </div>
-
-      <div class="handmade-frame handmade-frame-two">
-        <div class="handmade-frame-label">
-          Waist Beads + Bracelets
-        </div>
-      </div>
-
-      <div class="handmade-frame handmade-frame-three">
-        <div class="handmade-frame-label">
-          Handmade Goods
-        </div>
-      </div>
-
-      <div class="handmade-line"></div>
-
-      <div class="handmade-note">
-        made by these hands ✦
-      </div>
-
-    </div>
-
-
-    <div class="handcrafted-copy">
-
-      <span class="section-kicker">
-        created slowly, worn personally
-      </span>
-
-      <p class="eyebrow">Handcrafted</p>
-
-      <h2>Made by Hand. Worn Your Way.</h2>
-
-      <div class="doodle-divider"></div>
-
-      <p class="lead">
-        Permanent jewelry, bracelets, waist beads,
-        handcrafted goods, soap and whatever I'm making next.
-      </p>
-
-      <div style="margin-top:30px;">
-        <a href="gallery.html" class="btn btn-primary">
-          View the Gallery
-        </a>
-
-        <a href="shop.html" class="btn">
-          Shop Handcrafted
-        </a>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- BLOG -->
-<section class="section blog-showcase">
-  <div class="container blog-layout">
-
-    <div class="blog-editorial">
-
-      <div class="blog-paper blog-paper-one">
-        <div class="blog-paper-label">
-          Personal<br>Essays
-        </div>
-      </div>
-
-      <div class="blog-paper blog-paper-two">
-        <div class="blog-paper-label">
-          Thoughts +<br>Reflections
-        </div>
-      </div>
-
-      <div class="blog-paper blog-paper-three">
-        <div class="blog-paper-label">
-          Stories<br>Worth Telling
-        </div>
-      </div>
-
-      <div class="blog-note">
-        from my head to the page ✦
-      </div>
-
-    </div>
-
-
-    <div>
-
-      <span class="section-kicker">
-        read what’s been living in my head
-      </span>
-
-      <p class="eyebrow">Writing</p>
-
-      <h2>Read the Vibe</h2>
-
-      <div class="doodle-divider"></div>
-
-      <p class="lead">
-        Essays, stories, reflections, motherhood, creativity,
-        identity, books, business and whatever I’m writing lately.
-      </p>
-
-      <div style="margin-top:30px;">
-        <a href="blog.html" class="btn btn-primary">
-          Read the Blog
-        </a>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- RESOURCES -->
-<section class="section resources-showcase">
-  <div class="container resources-layout">
-
-    <div>
-
-      <span class="section-kicker">
-        made to actually help
-      </span>
-
-      <p class="eyebrow">Resources</p>
-
-      <h2>Made to Be Used.</h2>
-
-      <div class="doodle-divider"></div>
-
-      <p class="lead">
-        Practical resources, worksheets, printables,
-        checklists, guides and tools created to make real life
-        a little easier.
-      </p>
-
-      <div style="margin-top:30px;">
-        <a href="resources.html" class="btn btn-primary">
-          Explore Resources
-        </a>
-      </div>
-
-    </div>
-
-
-    <div class="resource-stack">
-
-      <div class="resource-sheet resource-one">
-        <div class="resource-label">
-          Printable<br>Tools
-        </div>
-      </div>
-
-      <div class="resource-sheet resource-two">
-        <div class="resource-label">
-          Guides<br>+ Worksheets
-        </div>
-      </div>
-
-      <div class="resource-sheet resource-three">
-        <div class="resource-label">
-          Real-Life<br>Resources
-        </div>
-      </div>
-
-      <div class="resources-note">
-        save it. print it. use it. ♡
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- TESTIMONIALS -->
-<section class="section testimonials-showcase">
-  <div class="container">
-
-    <div class="testimonial-intro">
-
-      <span class="section-kicker handwritten-note-light">
-        don’t just take my word for it
-      </span>
-
-      <p class="eyebrow">Client Love</p>
-
-      <h2>The Vibe, According to You.</h2>
-
-      <p class="lead">
-        Real experiences from clients, customers and people
-        who have worked with She's the Vibe.
-      </p>
-
-    </div>
-
-
-    <div class="testimonial-grid">
-
-      <article class="testimonial-card">
-        <p>
-          “Client testimonial goes here. We’ll replace this with
-          a real review once we build out the testimonial page.”
-        </p>
-
-        <div class="testimonial-name">
-          Client Name
-        </div>
-      </article>
-
-
-      <article class="testimonial-card">
-        <p>
-          “Another review can live here — jewelry, coaching,
-          handmade work, products or services.”
-        </p>
-
-        <div class="testimonial-name">
-          Client Name
-        </div>
-      </article>
-
-
-      <article class="testimonial-card">
-        <p>
-          “One more strong piece of social proof so visitors
-          immediately see real experiences.”
-        </p>
-
-        <div class="testimonial-name">
-          Client Name
-        </div>
-      </article>
-
-    </div>
-
-
-    <div style="margin-top:50px;">
-      <a href="testimonials.html" class="btn btn-outline">
-        Read More Love
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- ABOUT -->
-<section class="section about-showcase">
-  <div class="container about-layout">
-
-    <div class="about-copy">
-
-      <span class="section-kicker">
-        the woman behind all the things
-      </span>
-
-      <p class="eyebrow">Behind the Vibe</p>
-
-      <h2>I've Never Been Just One Thing.</h2>
-
-      <div class="doodle-divider"></div>
-
-      <p class="lead">
-        I create. I write. I build. I make.
-        I follow the ideas that refuse to leave me alone.
-      </p>
-
-      <p class="lead" style="margin-top:15px;">
-        She's the Vibe is the place where all of those parts
-        get to exist together — different expressions,
-        different ideas, same woman behind them all.
-      </p>
-
-      <div style="margin-top:30px;">
-        <a href="about.html" class="btn btn-primary">
-          Meet Christina
-        </a>
-      </div>
-
-    </div>
-
-
-    <div class="about-art">
-
-      <div class="about-star">✦</div>
-
-      <div class="about-frame-main">
-  <div class="about-frame-label">
-    creator<br>writer<br>maker
-  </div>
-</div>
-
-      <div class="about-frame-small">
-        <div class="about-frame-label">
-          many vibes.<br>same woman.
-        </div>
-      </div>
-
-      <div class="about-note">
-        hi, it’s me ♡
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- GALLERY -->
-<section class="section gallery-showcase">
-  <div class="container">
-
-    <div class="gallery-intro">
-
-      <span class="section-kicker">
-        a peek behind the screen
-      </span>
-
-      <p class="eyebrow">Gallery</p>
-
-      <h2>See the Vibe in Real Life.</h2>
-
-      <p class="lead">
-        A growing collection of jewelry, handmade pieces,
-        styled products, events and creative work.
-      </p>
-
-    </div>
-
-
-    <div class="gallery-grid">
-
-      <div class="gallery-tile gallery-tile-one">
-        <div class="gallery-tile-label">
-          Permanent Jewelry
-        </div>
-      </div>
-
-      <div class="gallery-tile gallery-tile-two">
-        <div class="gallery-tile-label">
-          Handmade Goods
-        </div>
-      </div>
-
-      <div class="gallery-tile gallery-tile-three">
-        <div class="gallery-tile-label">
-          Behind the Scenes
-        </div>
-      </div>
-
-      <div class="gallery-tile gallery-tile-four">
-        <div class="gallery-tile-label">
-          Events + Pop-Ups
-        </div>
-      </div>
-
-      <div class="gallery-tile gallery-tile-five">
-        <div class="gallery-tile-label">
-          Products + Creative Work
-        </div>
-      </div>
-
-    </div>
-
-
-    <div class="gallery-note">
-      made, styled, welded, written, created ✦
-    </div>
-
-    <div style="margin-top:25px;">
-      <a href="gallery.html" class="btn btn-primary">
-        View Full Gallery
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- STAY CONNECTED -->
-<section class="section stay-showcase">
-  <div class="container">
-
-    <div class="stay-inner">
-
-      <span class="stay-note">
-        don’t be a stranger ✦
-      </span>
-
-      <p class="eyebrow">Stay Connected</p>
-
-      <h2>Stay in the Vibe.</h2>
-
-      <div class="doodle-divider" style="margin-left:auto; margin-right:auto;"></div>
-
-      <p class="lead">
-        New products. New writing. New resources.
-        Whatever comes next.
-      </p>
-
-      <p style="margin-top:18px;">
-        Keep close. Keep curious. Come find what’s next.
-      </p>
-
-      <div class="stay-links">
-        <a href="contact.html" class="btn btn-primary">
-          Say Hello
-        </a>
-
-        <a href="https://instagram.com/shesthevibeco" class="btn btn-outline">
-          Instagram
-        </a>
-
-        <a href="https://www.facebook.com/shesthevibe.co" class="btn btn-outline">
-          Facebook
-        </a>
-
-        <a href="https://shesthevibe.etsy.com" class="btn btn-outline">
-          Etsy
-        </a>
-        
-        <a href="https://www.tiktok.com/@shes.the.vibe.co" class="btn btn-outline" target="_blank">
-          TikTok
-        </a>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-  <!-- FOOTER -->
+  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-grid">
 
-      <div class="footer-grid">
-
-        <div>
-          <div class="footer-brand">She's the Vibe</div>
-          <p class="footer-tagline">Practical. Pretty. You.</p>
-        </div>
-
-        <div class="footer-links">
-          <a href="shop.html">Shop</a>
-          <a href="blog.html">Blog</a>
-          <a href="resources.html">Resources</a>
-          <a href="services.html">Services</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="testimonials.html">Testimonials</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </div>
-
+      <div class="footer-brand">
+        <svg class="brand-crown" viewBox="0 0 40 28" aria-hidden="true">
+          <path d="M4 24 L2 8 L11 14 L20 2 L29 14 L38 8 L36 24 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="2" cy="8" r="2.2" fill="currentColor"/>
+          <circle cx="20" cy="2" r="2.2" fill="currentColor"/>
+          <circle cx="38" cy="8" r="2.2" fill="currentColor"/>
+          <rect x="4" y="24" width="32" height="3" rx="1.5" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">SHE&rsquo;S THE VIBE</span>
       </div>
 
-      <div class="footer-bottom">
-        © 2026 She's the Vibe. All rights reserved.
+      <nav class="footer-col" aria-label="Shop links">
+        <h4>Shop</h4>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">All Products</a>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Digital Dashboards</a>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Notebooks &amp; Stationery</a>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Cozy Apparel</a>
+        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Handmade &amp; Jewelry</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="About links">
+        <h4>About</h4>
+        <a href="about.html">Our Story</a>
+        <a href="about.html">Why She&rsquo;s The Vibe</a>
+        <a href="about.html">Community</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Stay Connected</h4>
+        <div class="social-row">
+          <a href="https://instagram.com/shesthevibeco" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@shes.the.vibe.co" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.3 1.9 3.8 4.2 4v3c-1.6 0-3-.5-4.2-1.3v6.6c0 3.5-2.6 6-6 6-3.2 0-5.8-2.6-5.8-5.8 0-3.3 2.7-5.9 6-5.9.3 0 .7 0 1 .1v3.1c-.3-.1-.7-.2-1-.2-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.8 2.8 2.8 1.7 0 3-1.3 3-3V3h2.9z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/shesthevibe.co" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5v4h3v7h4v-7h3l1-4h-4V7.8c0-.9.6-1.3 1.4-1.3H15V3z"/></svg>
+          </a>
+          <a href="https://www.etsy.com/shop/ShesTheVibe" aria-label="Etsy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 3h8v3h-2v12h2v3H8v-3h2V6H8V3z"/></svg>
+          </a>
+        </div>
+        <p class="footer-script">Good Energy<br>Looks Good On You &hearts;</p>
       </div>
 
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 She&rsquo;s The Vibe. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+      </nav>
     </div>
   </footer>
-
-
-  <script src="script.js"></script>
 
 </body>
 </html>
