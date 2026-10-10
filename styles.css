@@ -986,6 +986,28 @@ a { text-decoration: none; color: inherit; }
   margin: 10px 0 18px;
 }
 
+/* ---- Crisis callout note (Local Resources) ---- */
+.crisis-note {
+  max-width: 720px;
+  margin: 0 auto 56px;
+  text-align: center;
+  border: 1px solid var(--gold);
+  background: var(--gold-pale);
+  padding: 22px 28px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--ink);
+}
+.crisis-note strong { color: var(--burgundy-900); }
+
+.resource-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+.resource-contact .btn { font-size: 0.85rem; padding: 10px 20px; }
+
 /* ---- Journal (blog index) cards: editorial, not shoppy ---- */
 .journal-grid {
   display: grid;
