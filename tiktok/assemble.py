@@ -14,7 +14,7 @@ def build(name, slides):
         inputs += ["-loop", "1", "-t", str(dur), "-i", os.path.join(S, fn)]
         frames = int(dur * FPS)
         filters.append(
-            f"[{i}:v]scale=2160:3840,"
+            f"[{i}:v]scale=1350:2400,"
             f"zoompan=z='1+0.07*on/{frames}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps={FPS},"
             f"format=yuv420p[v{i}]"
         )
@@ -32,8 +32,8 @@ def build(name, slides):
     out_path = os.path.join(OUT, name)
     cmd = (["ffmpeg", "-y"] + inputs +
            ["-filter_complex", ";".join(filters),
-            "-map", "[vfinal]", "-c:v", "libx264", "-preset", "medium",
-            "-crf", "20", "-movflags", "+faststart", out_path])
+            "-map", "[vfinal]", "-c:v", "libx264", "-preset", "veryfast",
+            "-crf", "22", "-movflags", "+faststart", out_path])
     print("building", name)
     r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode != 0:
