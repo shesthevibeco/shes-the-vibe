@@ -1196,3 +1196,27 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 760px) {
   .main-nav { display: none; }
 }
+
+/* ---- Journal Prompt Library ---- */
+.prompt-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.prompt-list li {
+  position: relative;
+  padding: 14px 0 14px 34px;
+  border-bottom: 1px solid rgba(201, 162, 94, 0.18);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.prompt-list li:last-child { border-bottom: none; }
+.prompt-list li::before {
+  content: "\2726";
+  position: absolute;
+  left: 4px;
+  top: 15px;
+  color: var(--gold);
+  font-size: 0.85rem;
+}
