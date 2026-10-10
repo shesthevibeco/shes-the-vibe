@@ -36,11 +36,19 @@
 
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="https://www.etsy.com/shop/ShesTheVibe" target="_blank" rel="noopener">Shop</a>
+        <a href="shop.html">Shop</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
 
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
       <div class="header-icons">
         <a href="#" aria-label="Search">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
@@ -55,6 +63,20 @@
 
     </div>
   </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile navigation">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="blog.html">Blog</a>
+          <a href="resources.html">Resources</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 
   <main>
 
@@ -161,5 +183,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

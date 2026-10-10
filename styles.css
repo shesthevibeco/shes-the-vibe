@@ -1085,3 +1085,50 @@ a { text-decoration: none; color: inherit; }
   .about-grid,
   .contact-grid { gap: 36px; }
 }
+
+/* ============ MOBILE MENU ============ */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--cream);
+  cursor: pointer;
+  padding: 8px;
+}
+.menu-toggle svg { width: 26px; height: 26px; }
+
+.mobile-menu {
+  display: none;
+  background: var(--burgundy-950);
+  border-bottom: 1px solid rgba(201, 162, 94, 0.25);
+  padding: 8px 0 16px;
+}
+.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.mobile-menu a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(250, 245, 234, 0.85);
+  padding: 12px 4px;
+  border-bottom: 1px solid rgba(201, 162, 94, 0.12);
+  text-decoration: none;
+}
+.mobile-menu a.active { color: var(--gold-light); }
+.mobile-menu.open { display: block; }
+
+@media (max-width: 1020px) {
+  .menu-toggle { display: block; }
+  .header-inner { gap: 12px; }
+  .main-nav { gap: 18px; }
+  .main-nav a { font-size: 0.68rem; letter-spacing: 0.14em; }
+}
+@media (max-width: 760px) {
+  .main-nav { display: none; }
+}
