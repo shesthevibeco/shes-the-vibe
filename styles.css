@@ -1327,6 +1327,8 @@ a { text-decoration: none; color: inherit; }
 .journey-step h3 { font-family: 'Playfair Display', serif; font-size: 1.7rem; margin: 0 0 10px; color: #451425; }
 .journey-step h3 a { color: #451425; text-decoration: none; border-bottom: 1px solid #b08d4f; padding-bottom: 2px; }
 .journey-step h3 a:hover { color: #b08d4f; }
+.freebie-title-btn { background: none; border: none; padding: 0 0 2px; font: inherit; color: #451425; border-bottom: 1px solid #b08d4f; cursor: pointer; }
+.freebie-title-btn:hover { color: #b08d4f; }
 .journey-step p { margin: 0 auto; color: #5a5a5a; line-height: 1.8; max-width: 480px; }
 .journey-step p.journey-feeling { max-width: none; }
 .journey-soon h3 { color: #999; }

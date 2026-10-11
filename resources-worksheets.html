@@ -117,27 +117,27 @@
         <div class="resource-journey">
 
           <div class="journey-step">
-            <h3><a href="resources/core-values-reflection-worksheet.pdf" target="_blank" rel="noopener">Core Values Reflection</a></h3>
+            <h3><button type="button" class="freebie-btn freebie-title-btn" data-pdf="resources/core-values-reflection-worksheet.pdf" data-name="Core Values Reflection">Core Values Reflection</button></h3>
             <p>Understanding your values can help guide decisions, goals, and relationships. Get to the core of what matters most.</p>
           </div>
 
           <div class="journey-step">
-            <h3><a href="resources/life-wheel-worksheet.pdf" target="_blank" rel="noopener">Life Wheel</a></h3>
+            <h3><button type="button" class="freebie-btn freebie-title-btn" data-pdf="resources/life-wheel-worksheet.pdf" data-name="Life Wheel">Life Wheel</button></h3>
             <p>Assess your satisfaction across the areas of your life and spot where growth is calling.</p>
           </div>
 
           <div class="journey-step">
-            <h3><a href="resources/monthly-reset-worksheet.pdf" target="_blank" rel="noopener">Monthly Reset</a></h3>
+            <h3><button type="button" class="freebie-btn freebie-title-btn" data-pdf="resources/monthly-reset-worksheet.pdf" data-name="Monthly Reset">Monthly Reset</button></h3>
             <p>A gentle monthly check-in: reflect, release, and set intentions for the month ahead.</p>
           </div>
 
           <div class="journey-step">
-            <h3><a href="resources/vision-board-worksheet.pdf" target="_blank" rel="noopener">Vision Board</a></h3>
+            <h3><button type="button" class="freebie-btn freebie-title-btn" data-pdf="resources/vision-board-worksheet.pdf" data-name="Vision Board">Vision Board</button></h3>
             <p>Dream it, see it, become it — map your vision for the season ahead.</p>
           </div>
 
           <div class="journey-step">
-            <h3><a href="resources/budget-planner-worksheet.pdf" target="_blank" rel="noopener">Budget Planner</a></h3>
+            <h3><button type="button" class="freebie-btn freebie-title-btn" data-pdf="resources/budget-planner-worksheet.pdf" data-name="Budget Planner">Budget Planner</button></h3>
             <p>A simple, shame-free way to see where your money goes and plan where you want it to go.</p>
           </div>
 
@@ -252,6 +252,24 @@
       </nav>
     </div>
   </footer>
+
+  <!-- ============ FREEBIE EMAIL-CAPTURE MODAL ============ -->
+  <div class="freebie-modal" id="freebieModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="freebieModalTitle">
+    <div class="freebie-modal-card">
+      <button type="button" class="freebie-modal-close" id="freebieModalClose" aria-label="Close">&times;</button>
+      <p class="freebie-modal-script">A little gift for you</p>
+      <h3 id="freebieModalTitle">Get Your Free Download</h3>
+      <p class="freebie-modal-desc">Drop your email and <span id="freebieModalName"></span> is yours — plus you&rsquo;ll get love notes from the Vibe. No spam, ever.</p>
+      <form class="freebie-modal-form" id="freebieModalForm" novalidate>
+        <label class="sr-only" for="freebieName">Your name</label>
+        <input id="freebieName" type="text" name="name" placeholder="Your name" autocomplete="name">
+        <label class="sr-only" for="freebieEmail">Your email address</label>
+        <input id="freebieEmail" type="email" name="email" placeholder="Your email address" required autocomplete="email">
+        <button type="submit" class="btn btn-burgundy">Send Me the PDF</button>
+        <p class="freebie-modal-note">We respect your inbox. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

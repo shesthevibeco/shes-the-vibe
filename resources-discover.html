@@ -151,14 +151,14 @@
             <h3>Core Values Reflection</h3>
             <p class="product-sub">Worksheet &middot; Printable</p>
             <p class="service-desc">Understanding your values can help guide decisions, goals, and relationships.</p>
-            <a href="resources/core-values-reflection-worksheet.pdf" target="_blank" rel="noopener" class="btn btn-burgundy">Download the Worksheet</a>
+            <button type="button" class="btn btn-burgundy freebie-btn" data-pdf="resources/core-values-reflection-worksheet.pdf" data-name="Core Values Reflection">Get the PDF</button>
           </article>
 
           <article class="product-card">
             <h3>Life Wheel Exercise</h3>
             <p class="product-sub">Worksheet &middot; Printable</p>
             <p class="service-desc">Assess your satisfaction across the areas of your life and identify opportunities for growth.</p>
-            <a href="resources/life-wheel-worksheet.pdf" target="_blank" rel="noopener" class="btn btn-burgundy">Download the Worksheet</a>
+            <button type="button" class="btn btn-burgundy freebie-btn" data-pdf="resources/life-wheel-worksheet.pdf" data-name="Life Wheel">Get the PDF</button>
           </article>
 
         </div>
@@ -176,14 +176,14 @@
             <h3>Monthly Reset Worksheet</h3>
             <p class="product-sub">Worksheet &middot; Printable</p>
             <p class="service-desc">A gentle monthly check-in: reflect, release, and set intentions for the month ahead.</p>
-            <a href="resources/monthly-reset-worksheet.pdf" target="_blank" rel="noopener" class="btn btn-burgundy">Download the Worksheet</a>
+            <button type="button" class="btn btn-burgundy freebie-btn" data-pdf="resources/monthly-reset-worksheet.pdf" data-name="Monthly Reset">Get the PDF</button>
           </article>
 
           <article class="product-card">
             <h3>Vision Board Worksheet</h3>
             <p class="product-sub">Worksheet &middot; Printable</p>
             <p class="service-desc">Dream it, see it, become it — map your vision for the season ahead.</p>
-            <a href="resources/vision-board-worksheet.pdf" target="_blank" rel="noopener" class="btn btn-burgundy">Download the Worksheet</a>
+            <button type="button" class="btn btn-burgundy freebie-btn" data-pdf="resources/vision-board-worksheet.pdf" data-name="Vision Board">Get the PDF</button>
           </article>
 
         </div>
@@ -200,7 +200,7 @@
             <h3>Budget Planner Worksheet</h3>
             <p class="product-sub">Worksheet &middot; Printable</p>
             <p class="service-desc">A simple, shame-free way to see where your money goes and plan where you want it to go.</p>
-            <a href="resources/budget-planner-worksheet.pdf" target="_blank" rel="noopener" class="btn btn-burgundy">Download the Worksheet</a>
+            <button type="button" class="btn btn-burgundy freebie-btn" data-pdf="resources/budget-planner-worksheet.pdf" data-name="Budget Planner">Get the PDF</button>
           </article>
 
         </div>
@@ -342,6 +342,24 @@
       </nav>
     </div>
   </footer>
+
+  <!-- ============ FREEBIE EMAIL-CAPTURE MODAL ============ -->
+  <div class="freebie-modal" id="freebieModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="freebieModalTitle">
+    <div class="freebie-modal-card">
+      <button type="button" class="freebie-modal-close" id="freebieModalClose" aria-label="Close">&times;</button>
+      <p class="freebie-modal-script">A little gift for you</p>
+      <h3 id="freebieModalTitle">Get Your Free Download</h3>
+      <p class="freebie-modal-desc">Drop your email and <span id="freebieModalName"></span> is yours — plus you&rsquo;ll get love notes from the Vibe. No spam, ever.</p>
+      <form class="freebie-modal-form" id="freebieModalForm" novalidate>
+        <label class="sr-only" for="freebieName">Your name</label>
+        <input id="freebieName" type="text" name="name" placeholder="Your name" autocomplete="name">
+        <label class="sr-only" for="freebieEmail">Your email address</label>
+        <input id="freebieEmail" type="email" name="email" placeholder="Your email address" required autocomplete="email">
+        <button type="submit" class="btn btn-burgundy">Send Me the PDF</button>
+        <p class="freebie-modal-note">We respect your inbox. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
