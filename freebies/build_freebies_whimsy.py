@@ -155,25 +155,10 @@ def sticker_badge(c, cx, cy, r, number, bg=SOFTPINK, fg=BURGUNDY):
     c.drawCentredString(cx, cy - r * 0.32, str(number))
 
 def script_header(c, text, y, size=26, color=BURGUNDY):
-    """Playful script section header with pink swirl underline."""
+    """Playful script section header (no underline)."""
     c.setFillColor(color)
     c.setFont(SCRIPT, size)
     c.drawCentredString(W / 2, y, text)
-    # pink swirl underline
-    c.setStrokeColor(SOFTPINK)
-    c.setLineWidth(2)
-    p = c.beginPath()
-    cx = W / 2
-    wpx = min(3.5 * inch, len(text) * size * 0.32)
-    for i in range(41):
-        t = i / 40
-        x = cx - wpx / 2 + t * wpx
-        yy = y - 10 + 4 * math.sin(t * math.pi * 3)
-        if i == 0:
-            p.moveTo(x, yy)
-        else:
-            p.lineTo(x, yy)
-    c.drawPath(p, fill=0, stroke=1)
     return y - 28
 
 def gold_divider(c, y):
