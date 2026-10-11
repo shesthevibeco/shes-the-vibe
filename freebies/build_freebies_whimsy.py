@@ -98,33 +98,12 @@ def doodle_flower(c, cx, cy, r, petal_color=SOFTPINK, center_color=GOLD):
     c.circle(cx, cy, r * 0.35, fill=1, stroke=0)
 
 def swirl_divider(c, y, width=3.2 * inch, color=GOLD):
-    """Wavy swirl divider with a heart in the center."""
+    """Simple straight divider with a heart in the center."""
     cx = W / 2
     c.setStrokeColor(color)
     c.setLineWidth(1.5)
-    # left swirl
-    p = c.beginPath()
-    steps = 60
-    for i in range(steps + 1):
-        t = i / steps
-        x = cx - width / 2 + t * (width / 2 - 0.35 * inch)
-        yy = y + 6 * math.sin(t * math.pi * 2.5)
-        if i == 0:
-            p.moveTo(x, yy)
-        else:
-            p.lineTo(x, yy)
-    c.drawPath(p, fill=0, stroke=1)
-    # right swirl
-    p = c.beginPath()
-    for i in range(steps + 1):
-        t = i / steps
-        x = cx + 0.35 * inch + t * (width / 2 - 0.35 * inch)
-        yy = y + 6 * math.sin(t * math.pi * 2.5 + math.pi)
-        if i == 0:
-            p.moveTo(x, yy)
-        else:
-            p.lineTo(x, yy)
-    c.drawPath(p, fill=0, stroke=1)
+    c.line(cx - width / 2, y, cx - 0.35 * inch, y)
+    c.line(cx + 0.35 * inch, y, cx + width / 2, y)
     # center heart + sparkles
     doodle_heart(c, cx, y, 10, SOFTPINK)
     star4(c, cx - 0.55 * inch, y + 4, 6)
