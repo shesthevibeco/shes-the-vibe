@@ -107,6 +107,45 @@ document.addEventListener('DOMContentLoaded', function () {
     var freebieClose = document.getElementById('freebieModalClose');
     var pendingPdf = null;
     var pendingTitle = null;
+    var STV_SUBSCRIBER_KEY = 'stv_subscriber';
+
+    // Remember-me: keep the subscriber's name/email in localStorage so repeat
+    // freebie downloads skip the modal but still get tracked in the sheet.
+    function getStoredSubscriber() {
+      try {
+        var raw = localStorage.getItem(STV_SUBSCRIBER_KEY);
+        if (!raw) return null;
+        var s = JSON.parse(raw);
+        if (s && s.email && s.email.indexOf('@') > 0) return s;
+      } catch (e) { /* localStorage unavailable */ }
+      return null;
+    }
+    function saveSubscriber(name, email) {
+      try {
+        localStorage.setItem(STV_SUBSCRIBER_KEY, JSON.stringify({
+          name: name || '',
+          email: email,
+          captured: true,
+          capturedAt: new Date().toISOString()
+        }));
+      } catch (e) { /* localStorage unavailable */ }
+    }
+    function downloadPdf(pdf) {
+      var a = document.createElement('a');
+      a.href = pdf;
+      a.setAttribute('download', '');
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+    function postFreebieSignup(name, email, title) {
+      return fetch(NEWSLETTER_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ name: name, email: email, page: window.location.pathname, source: 'freebie: ' + title })
+      });
+    }
 
     function openFreebieModal(pdf, title) {
       pendingPdf = pdf;
@@ -126,7 +165,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('.freebie-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        openFreebieModal(btn.getAttribute('data-pdf'), btn.getAttribute('data-name'));
+        var pdf = btn.getAttribute('data-pdf');
+        var title = btn.getAttribute('data-name');
+        var sub = getStoredSubscriber();
+        if (sub) {
+          // Already signed up: track this download, then download directly — no modal.
+          postFreebieSignup(sub.name, sub.email, title).then(function () {
+            downloadPdf(pdf);
+          }).catch(function () {
+            // Track failed but still give them the PDF.
+            downloadPdf(pdf);
+          });
+          return;
+        }
+        openFreebieModal(pdf, title);
       });
     });
     freebieClose.addEventListener('click', closeFreebieModal);
@@ -151,19 +203,11 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.disabled = true;
       var original = btn.textContent;
       btn.textContent = 'Sending...';
-      fetch(NEWSLETTER_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'text/plain' },
-        body: JSON.stringify({ name: name, email: email, page: window.location.pathname, source: 'freebie: ' + pendingTitle })
-      }).then(function () {
+      postFreebieSignup(name, email, pendingTitle).then(function () {
+        // Remember this visitor so future freebie downloads skip the modal.
+        saveSubscriber(name, email);
         // Trigger the PDF download
-        var a = document.createElement('a');
-        a.href = pendingPdf;
-        a.setAttribute('download', '');
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
+        downloadPdf(pendingPdf);
         freebieForm.innerHTML = '<p class="join-success">It\'s on its way! Your download should start any second. Check your inbox soon for a little hello from us.</p>';
         setTimeout(closeFreebieModal, 5000);
       }).catch(function () {
