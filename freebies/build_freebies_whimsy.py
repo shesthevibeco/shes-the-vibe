@@ -270,64 +270,64 @@ def page_header(c, section_label, seed=0):
 # ============================================================
 SECTIONS = [
     ("Self-Discovery", [
-        "What did you love doing as a kid before anyone told you what was 'appropriate'?",
-        "Describe yourself in 10 words \u2014 then circle the ones that actually feel like YOU.",
-        "What are you pretending not to know about yourself right now?",
-        "If nobody would judge you, how would you spend your Saturdays?",
-        "What part of yourself have you been dimming to keep someone else comfortable?",
-        "Write about a moment you felt most like yourself. What were you doing?",
-        "What do you want people to feel when they meet you?",
-        "What's something you're good at that you never give yourself credit for?",
-        "If your life had a theme song right now, what would it be and why?",
-        "What would you do this week if you trusted yourself completely?",
+        "What did little-you LOVE doing before the world had opinions about it? (Capes? Mud pies? Zero shame \u2014 spill.)",
+        "Describe yourself in 10 words \u2014 then circle the ones that actually feel like YOU, not the ones that sound good at brunch.",
+        "What are you pretending not to know about yourself right now? (Your journal already knows. Just write it.)",
+        "If nobody would judge you \u2014 not your mama, not the group chat \u2014 how would you spend your Saturdays?",
+        "What part of yourself have you been dimming to keep someone else comfortable? Name her. She's tired of hiding.",
+        "Write about a moment you felt most like yourself. What were you doing? Who were you with? Bottle that feeling.",
+        "What do you want people to FEEL when they meet you? (Warm? Powerful? Like they just got hugged?)",
+        "What's something you're secretly amazing at that you never give yourself credit for? Brag a little. We won't tell.",
+        "If your life had a theme song right now, what would it be? Bonus points for dramatic air-guitar while you write.",
+        "What would you do this week if you trusted yourself completely? (Spoiler: you can trust yourself. Do the thing.)",
     ]),
     ("When You're Overwhelmed", [
-        "Dump it all out: everything on your mind, no filter, no organizing. Go.",
-        "What's the ONE thing actually bothering you underneath all the noise?",
-        "What can you put down today that was never yours to carry?",
-        "Write a permission slip to yourself for something you need right now.",
-        "What does your body need that you've been ignoring?",
-        "List 5 things that are actually in your control today.",
-        "What would 'good enough' look like today instead of perfect?",
-        "Who or what is draining you most right now? Be honest.",
-        "What would you tell your best friend if she were in your exact situation?",
-        "What's one tiny thing that would make today 10% better?",
+        "Brain dump, no filter: everything on your mind, messy and unorganized. Get it OUT of your head.",
+        "Underneath all the noise \u2014 what's the ONE thing actually bothering you? Be brutally honest.",
+        "What can you put down today that was never yours to carry? (Other people's moods? The group project from 2019?)",
+        "Write yourself a permission slip. Yes, like elementary school. 'I, ____, am excused from ____ because I said so.'",
+        "What does your body need that you've been ignoring? (Water? A nap? To scream into a pillow?)",
+        "List 5 things actually in your control today. (Your attitude, your playlist, your snack choices...)",
+        "What would 'good enough' look like today instead of perfect? Lower the bar. The bar was too high anyway.",
+        "Who or what is draining you most right now? No guilt \u2014 just name it.",
+        "What would you tell your best friend if she were in your exact situation? Now take your own advice, babe.",
+        "What's one tiny thing that would make today 10% better? (Not 100%. Just 10%. Start there.)",
     ]),
     ("Relationships", [
-        "Who makes you feel most like yourself? What do they do differently?",
-        "What pattern keeps showing up in your relationships that you're tired of?",
-        "Write the conversation you've been avoiding. Say the unsaid thing.",
-        "What do you need from the people closest to you that you've never asked for?",
-        "Describe a relationship that taught you something painful but valuable.",
-        "Where are you over-giving? Where are you under-receiving?",
-        "What does a healthy 'no' feel like in your body?",
-        "Who do you need to forgive \u2014 including yourself?",
-        "What kind of friend/partner/mother are you becoming? Is she who you want to be?",
-        "Write a love letter to someone who deserves to hear it \u2014 maybe it's you.",
+        "Who makes you feel most like yourself? What do they do differently? (Take notes. We need more of that.)",
+        "What pattern keeps showing up in your relationships that you're SO over? Name it so you can stop repeating it.",
+        "Write the conversation you've been avoiding. Say the unsaid thing. (It's just paper. It can't argue back.)",
+        "What do you need from the people closest to you that you've never asked for? Ask on this page first.",
+        "Describe a relationship that taught you something painful but valuable. What was the lesson? (The expensive ones teach the most.)",
+        "Where are you over-giving? Where are you under-receiving? Let's audit your emotional budget.",
+        "What does a healthy 'no' feel like in your body? Describe it so you can recognize it next time.",
+        "Who do you need to forgive \u2014 including yourself? (Especially yourself.)",
+        "What kind of friend/partner/mama are you becoming? Is she who you actually want to be?",
+        "Write a love letter to someone who deserves to hear it. Plot twist: it might be you.",
     ]),
     ("Breaking Cycles", [
-        "What did you learn about love growing up that you're actively unlearning?",
-        "What cycle ends with you? Name it out loud on this page.",
-        "What would you do differently than the generation before you?",
-        "Write about a moment you chose differently than your mother would have.",
-        "What story about yourself are you done telling?",
-        "Who told you you couldn't? What did you do anyway?",
-        "What's one belief you inherited that was never actually yours?",
-        "How has surviving hard things made you stronger \u2014 not bitter?",
-        "What are you teaching the next generation just by how you live?",
-        "Write to the younger you who needed someone in her corner. Be that someone.",
+        "What did you learn about love growing up that you're actively unlearning? (Gold star for doing the work.)",
+        "What cycle ends with YOU? Say it out loud, then write it big: THIS STOPS HERE.",
+        "What would you do differently than the generation before you? (You're allowed to want better.)",
+        "Write about a moment you chose differently than your mother would have. That's not rebellion \u2014 that's growth.",
+        "What story about yourself are you DONE telling? Retire it. Write its obituary.",
+        "Who told you you couldn't? And what did you do anyway? (Flex a little. You earned it.)",
+        "What's one belief you inherited that was never actually yours? Return to sender.",
+        "How has surviving hard things made you stronger \u2014 not bitter? (There's a difference, and you know it.)",
+        "What are you teaching the next generation just by how you live? They're watching. Make it good.",
+        "Write to the younger you who needed someone in her corner. Congratulations \u2014 you're her now.",
     ]),
     ("Dreaming Bigger", [
-        "If money and fear weren't factors, what would your life look like in 3 years?",
-        "What's the dream you've been calling 'silly' that won't leave you alone?",
-        "Describe your ideal morning, in detail. Now: what's one step toward it?",
-        "What would you create if you knew people would love it?",
-        "Who do you admire and what specific quality of theirs do you want to embody?",
-        "What's something you've always wanted to learn? Why not now?",
-        "Write your own 'I made it' moment \u2014 where are you, who's there, how does it feel?",
-        "What does success look like for YOU \u2014 not Instagram, not your mama, you?",
-        "What's one bold move you could make this month?",
-        "Finish this sentence 10 times: 'I am becoming a woman who...'",
+        "If money and fear weren't factors, what would your life look like in 3 years? Dream embarrassingly big.",
+        "What's the dream you've been calling 'silly' that won't leave you alone? (It's not silly. It's calling.)",
+        "Describe your ideal morning in vivid detail. Now: what's ONE step toward it you could take this week?",
+        "What would you create if you knew people would absolutely love it? (They will. But create it anyway.)",
+        "Who do you admire, and what specific quality of theirs do you want to steal? (Admiration is just recognition.)",
+        "What's something you've always wanted to learn? Cool. Why not now? What's the first tiny step?",
+        "Write your 'I made it' moment like it's already happened. Where are you? Who's there? How does the air feel?",
+        "What does success look like for YOU \u2014 not Instagram, not your mama, YOU?",
+        "What's one bold move you could make this month? (Bold, not reckless. There's a difference. Mostly.)",
+        "Finish this sentence 10 times: 'I am becoming a woman who...' (Go. Don't overthink. Just write.)",
     ]),
 ]
 
@@ -345,28 +345,29 @@ def build_prompts():
     c.setAuthor("She's The Vibe")
     cover_page(c, "50 Journal Prompts<br/>for When You're Stuck",
                "Practical. Pretty. You.",
-               "Your words are the way back to yourself.", seed=11)
+               "Your words are the way back to yourself. Grab your cutest pen \u2014 let's go.", seed=11)
     # intro page with whimsy
     y = page_header(c, "hey love, let's do this", seed=21)
     scatter_sparkles(c, 10, seed=22, y_range=(1 * inch, H - 1.5 * inch))
-    y = script_header(c, "How This Works", y - 10, size=28)
+    y = script_header(c, "How This Works (Barely Any Rules)", y - 10, size=28)
     intro = prompt_style(11.5, DARK)
     p = Paragraph("These prompts are for the days your brain won't shut up, "
-                  "the mornings you don't know where to start, and the nights you need "
-                  "to get it OUT of your head and onto paper. There's no right way to use "
-                  "them. Pick one. Write messy. Skip around. Come back when you need to. "
-                  "Your journal doesn't judge \u2014 that's the whole point.", intro)
+                  "the mornings you stare at a blank page like it personally offended you, "
+                  "and the 2am spirals that need somewhere soft to land. There's no wrong "
+                  "way to use them. Pick one. Write messy. Doodle in the margins. Skip "
+                  "around like you're channel-surfing your own soul. Your journal doesn't "
+                  "judge \u2014 that's literally the whole point.", intro)
     pw, ph = p.wrap(W - 2 * inch, 4 * inch)
     p.drawOn(c, inch, y - ph)
     y -= ph + 0.3 * inch
     swirl_divider(c, y)
     y -= 0.45 * inch
-    y = script_header(c, "The Only Rules", y, size=24)
+    y = script_header(c, "The Only Rules (They're Barely Rules)", y, size=24)
     rules = [
-        "One prompt a day, or binge ten at 2am \u2014 your call",
-        "Give yourself at least 5 honest minutes per prompt",
-        "Write the first thing that comes up, even if it's ugly",
-        "Especially if it's ugly",
+        "One prompt a day with your morning coffee, or binge ten at 2am in your feelings \u2014 your call, zero judgment",
+        "Give each prompt at least 5 honest minutes (set a timer, light the candle, romanticize it)",
+        "Write the FIRST thing that pops up, even if it's ugly",
+        "Especially if it's ugly. The ugly stuff is usually the true stuff.",
     ]
     for i, rule in enumerate(rules):
         doodle_heart(c, inch + 0.15 * inch, y - 4, 7, SOFTPINK if i % 2 == 0 else GOLD)
@@ -404,11 +405,12 @@ def build_prompts():
     y = page_header(c, "you did it, babe", seed=99)
     scatter_sparkles(c, 12, seed=100, y_range=(1.5 * inch, H - 1.5 * inch))
     y = script_header(c, "You Showed Up. That Counts.", y - 10, size=28)
-    p = Paragraph("Fifty prompts down \u2014 or fifty to go, whenever you're ready. "
-                  "If these helped you hear yourself a little clearer, imagine what "
-                  "a whole guided journal could do. Check out the full She's The Vibe "
-                  "journal collection, or book a free 20-minute Vibe Session and let's "
-                  "talk about where you're headed.", prompt_style(11.5, DARK, center=True))
+    p = Paragraph("Fifty prompts down \u2014 or fifty waiting patiently for whenever you're "
+                  "ready (they're good like that). If these helped you hear yourself a little "
+                  "clearer, imagine what a whole guided journal could do. Peek at the full "
+                  "She's The Vibe journal collection, or book a free 20-minute Vibe Session "
+                  "and let's dream about where you're headed next. Your pen did good today.",
+                  prompt_style(11.5, DARK, center=True))
     pw, ph = p.wrap(W - 2.4 * inch, 4 * inch)
     p.drawOn(c, (W - pw) / 2, y - ph)
     y -= ph + 0.45 * inch
@@ -430,25 +432,30 @@ def build_prompts():
 # ============================================================
 RESET_STEPS = [
     ("breathe", "Minute One",
-     "Close your eyes. Inhale for 4 counts, hold for 4, exhale for 6. "
-     "Do it 3 times. You're not behind. You're right here.",
-     "How does your breath feel right now? (tight / shallow / easy):"),
+     "Close your eyes, gorgeous. Inhale for 4 counts, hold for 4, exhale for 6 "
+     "\u2014 like you're blowing out birthday candles, but make it healing. Do it 3 times. "
+     "You're not behind. You're right here, and right here is perfect.",
+     "How's the breath feeling? (tight / shallow / easy / main-character energy):"),
     ("intention", "Minute Two",
-     "Set ONE intention for today. Not a to-do list \u2014 a way of being. "
-     "\"Today I will move slowly.\" \"Today I choose peace over proving.\"",
-     "My intention for today:"),
+     "Set ONE intention for today. Not a to-do list \u2014 a whole vibe. Whisper it like "
+     "a spell: \"Today I move slowly.\" \"Today I choose peace over proving.\" "
+     "Feel how good that feels?",
+     "Today, I choose to be:"),
     ("gratitude", "Minute Three",
-     "Name 3 things you're grateful for. Small counts. Coffee counts. "
-     "Breathing counts. Let yourself actually feel one of them.",
-     "1.                                          2.                                          3."),
+     "Name 3 things you're grateful for. Small counts! Coffee counts. Cute socks count. "
+     "Breathing DEFINITELY counts. Pick one and let yourself actually FEEL it for like, "
+     "10 whole seconds.",
+     "1.                       2.                       3.  (my faves!)"),
     ("body check", "Minute Four",
-     "Scan from head to toe. Where are you holding tension? Shoulders? Jaw? "
-     "Stomach? Breathe into that spot. Soften it just 10%.",
-     "What I noticed in my body:"),
+     "Do a little scan, head to toe, like you're checking in on a dear friend "
+     "(because you are \u2014 it's you). Where's the tension hiding? Shoulders? Jaw? "
+     "Stomach? Breathe right into that spot and soften it just 10%. Baby steps, babe.",
+     "My body told me:"),
     ("today's vibe", "Minute Five",
-     "Pick your vibe for the day. One word. Write it big. Let it guide "
-     "your choices \u2014 the music, the outfit, the energy you bring.",
-     "Today's vibe (one word):"),
+     "Pick your vibe for the day. ONE word. Write it BIG and underline it twice. "
+     "This is your North Star now \u2014 let it pick the playlist, the outfit, the energy "
+     "you walk in with. Main character behavior only.",
+     "Today's vibe (make it iconic):"),
 ]
 
 STEP_ICONS = ["breathe", "intention", "gratitude", "body", "vibe"]
@@ -458,15 +465,17 @@ def build_reset():
     c.setTitle("The 5-Minute Morning Reset \u2014 She's The Vibe")
     c.setAuthor("She's The Vibe")
     cover_page(c, "The 5-Minute<br/>Morning Reset",
-               "Start grounded. Stay you.",
-               "Five minutes. Five steps. A whole different day.", seed=55)
+               "No boring mornings allowed.",
+               "Five minutes. Five tiny rituals. A whole different day.", seed=55)
     y = page_header(c, "your magical morning ritual", seed=61)
     scatter_sparkles(c, 8, seed=62, y_range=(1 * inch, H - 1.6 * inch))
     y = script_header(c, "Before the World Gets a Vote", y - 5, size=26)
-    p = Paragraph("Mornings set the tone \u2014 but nobody has an hour. This reset takes "
-                  "five minutes and meets you where you are: half-awake, coffee in hand, "
-                  "already thinking about everything. Print it, keep it by your bed, "
-                  "and give yourself five minutes before the world gets a vote.",
+    p = Paragraph("Mornings set the tone \u2014 but let's be real, nobody has an hour "
+                  "(and if you do, please teach me your ways). This little ritual takes five "
+                  "minutes and meets you exactly where you are: half-awake, coffee in hand, "
+                  "already mentally reorganizing your entire life. Print it, tape it to your "
+                  "mirror, keep it by your bed \u2014 and give yourself five sparkly minutes "
+                  "before the world gets a vote.",
                   prompt_style(11, DARK, center=True))
     pw, ph = p.wrap(W - 2.2 * inch, 3 * inch)
     p.drawOn(c, (W - pw) / 2, y - ph)
@@ -520,10 +529,11 @@ def build_reset():
     swirl_divider(c, y)
     y -= 0.4 * inch
     y = script_header(c, "You Chose Yourself First", y, size=24)
-    p = Paragraph("Five minutes. That's the whole vibe. Tape this to your mirror, "
-                  "screenshot it, make it your lock screen. And when you're ready for "
-                  "deeper work, the She's The Vibe journals and a free 20-minute Vibe "
-                  "Session are waiting at shesthevibe.co.",
+    p = Paragraph("Five minutes. That's it. That's the whole vibe. You just chose yourself "
+                  "before the chaos chose you \u2014 go ahead and take a bow for that. Tape this "
+                  "to your mirror, screenshot it, make it your lock screen. And when you're "
+                  "ready to go deeper, the She's The Vibe journals and a free 20-minute Vibe "
+                  "Session are waiting for you at shesthevibe.co. You did that.",
                   prompt_style(10.5, DARK, center=True))
     pw, ph = p.wrap(W - 2.4 * inch, 3 * inch)
     p.drawOn(c, (W - pw) / 2, y - ph)
@@ -536,38 +546,38 @@ def build_reset():
 SCRIPT_SECTIONS = [
     ("Saying No", "the word is a full sentence",
      [
-         ("The simple no", "\"I can't do that, but thank you for thinking of me.\""),
-         ("No with a door closed", "\"That doesn't work for me. I hope you find what you need.\""),
-         ("No to the guilt trip", "\"I understand you're disappointed, and my answer is still no.\""),
-         ("The delay (buy yourself time)", "\"Let me check and get back to you.\" <i>(Then decide on YOUR terms.)</i>"),
+         ("The classic", "\"I can't do that, but thank you for thinking of me!\" <i>(Smile. Mean it. Move on.)</i>"),
+         ("The closed door", "\"That doesn't work for me. I hope you find what you need!\" <i>(No explanation owed, babe.)</i>"),
+         ("The guilt-trip diffuser", "\"I get that you're disappointed \u2014 and my answer is still no.\" <i>(Broken-record energy. It works.)</i>"),
+         ("The pause button", "\"Let me check and get back to you.\" <i>(Translation: I'm deciding on MY terms, not under pressure.)</i>"),
      ]),
     ("With Family", "love them. still hold the line.",
      [
-         ("The topic shutdown", "\"I'm not discussing that anymore. Let's talk about something else.\""),
-         ("The visit boundary", "\"We'd love to see you Saturday from 2 to 4. We'll need to wrap up then.\""),
-         ("The advice deflector", "\"I appreciate you caring. I've got this handled.\""),
-         ("When they bring up the past", "\"I've moved past that, and I'd like our conversations to reflect that.\""),
+         ("The topic shutdown", "\"I'm not discussing that anymore \u2014 let's talk about literally anything else!\" <i>(Then actually change the subject. Weather works.)</i>"),
+         ("The visit with an exit plan", "\"We'd love to see you Saturday from 2 to 4! We'll need to head out right at 4.\" <i>(The end time IS the boundary. Protect it.)</i>"),
+         ("The unsolicited-advice deflector", "\"I love that you care \u2014 I've got this one handled.\" <i>(Warm voice, firm spine.)</i>"),
+         ("The past stays in the past", "\"I've moved past that, and I'd love our conversations to reflect that too.\" <i>(Growth looks good on you.)</i>"),
      ]),
     ("At Work", "professional doesn't mean doormat",
      [
-         ("The workload pushback", "\"I can take this on if we push back the X deadline \u2014 which should I prioritize?\""),
-         ("The after-hours text", "\"I'll look at this first thing in the morning.\" <i>(Then put the phone down.)</i>"),
-         ("The credit claim", "\"Thanks \u2014 actually, that was my work on that project. Happy to walk you through it.\""),
-         ("The meeting overload", "\"I won't be able to make that one \u2014 please send me the notes.\""),
+         ("The priority check", "\"I can take this on! Which should I prioritize \u2014 this or the X deadline?\" <i>(Make them choose. Watch the magic.)</i>"),
+         ("The after-hours boundary", "\"I'll look at this first thing in the morning!\" <i>(Then put the phone DOWN. The email will survive.)</i>"),
+         ("The credit reclaim", "\"Thanks! Actually, that was my work on that project \u2014 happy to walk you through it.\" <i>(Sweet smile. Facts only.)</i>"),
+         ("The meeting opt-out", "\"I won't be able to make that one \u2014 send me the notes and I'll catch up!\" <i>(Protect your calendar like it pays rent.)</i>"),
      ]),
     ("With Friends", "real friends respect the line",
      [
-         ("The plan decline", "\"I need a quiet night in, but have so much fun! Let's catch up next week.\""),
-         ("The venting limit", "\"I love you and I only have about 10 minutes of advice-brain left today.\""),
-         ("The money ask", "\"I'm not able to lend money, but I can help you brainstorm other options.\""),
-         ("The last-minute favor", "\"I can't swing that today. I need more notice for favors like that.\""),
+         ("The cozy decline", "\"I need a quiet night in tonight, but have SO much fun! Let's do next week?\" <i>(FOMO is a liar. Rest is productive.)</i>"),
+         ("The venting window", "\"I love you and my advice-brain has about 10 minutes left in it today.\" <i>(Honest + hilarious = boundary kept.)</i>"),
+         ("The money no", "\"I'm not able to lend money, but I can help you brainstorm other options!\" <i>(Generous without going broke.)</i>"),
+         ("The last-minute pass", "\"I can't swing that today \u2014 I need more notice for favors like that!\" <i>(Your time is not same-day delivery.)</i>"),
      ]),
     ("When They Push Back", "they will test it. hold it anyway.",
      [
-         ("The repeat", "\"I hear you. My answer hasn't changed.\" <i>(Say it the same way, every time.)</i>"),
-         ("The guilt", "\"I'm not responsible for managing your disappointment about my boundary.\""),
-         ("The escalation", "\"If you keep pushing, I'm going to end this conversation.\" <i>(Then do it.)</i>"),
-         ("The aftermath pep talk", "\"Holding that boundary was hard AND it was right. I'm proud of me.\""),
+         ("The broken record", "\"I hear you. My answer hasn't changed.\" <i>(Same words, same tone, every time. Boring is powerful.)</i>"),
+         ("The guilt boomerang", "\"I'm not responsible for managing your disappointment about my boundary.\" <i>(Read that twice. Let it sink in.)</i>"),
+         ("The consequence", "\"If you keep pushing, I'm going to end this conversation.\" <i>(Then actually do it. Follow-through is everything.)</i>"),
+         ("The victory lap", "\"Holding that boundary was hard AND it was right. I'm proud of me.\" <i>(Say it in the mirror. Mean it.)</i>"),
      ]),
 ]
 
@@ -576,16 +586,19 @@ def build_scripts():
     c.setTitle("Boundary Scripts: What to Say When... \u2014 She's The Vibe")
     c.setAuthor("She's The Vibe")
     cover_page(c, "Boundary Scripts<br/><font size=28>what to say when...</font>",
-               "Your cheat sheet for holding the line.",
-               "Because 'no' is a full sentence \u2014 but sometimes you need the words.",
+               "Your pocket guide to holding the line (cutely).",
+               "Because 'no' is a full sentence \u2014 but sometimes you need the words gift-wrapped and ready.",
                seed=78)
     y = page_header(c, "your pocket power phrases", seed=81)
     scatter_sparkles(c, 8, seed=82, y_range=(1 * inch, H - 1.6 * inch))
     y = script_header(c, "Boundaries, But Make It Cute", y - 5, size=26)
-    p = Paragraph("Boundaries aren't about being mean \u2014 they're about being clear. "
-                  "The hardest part is finding the words in the moment, so here they are, "
-                  "ready to go. Practice saying them out loud. Save the ones you need most. "
-                  "And remember: a boundary without enforcement is just a suggestion.",
+    p = Paragraph("Boundaries aren't about being mean \u2014 they're about being CLEAR "
+                  "(there's a difference, and your nervous system knows it). The hardest part "
+                  "is finding the words when your heart is pounding and Aunt Linda is staring "
+                  "at you. So here they are \u2014 pocket-sized power phrases, ready to go. "
+                  "Practice them in the mirror. Screenshot your favorites. Whisper them like "
+                  "spells. And remember: a boundary without enforcement is just a suggestion "
+                  "with extra steps.",
                   prompt_style(11, DARK, center=True))
     pw, ph = p.wrap(W - 2.2 * inch, 3 * inch)
     p.drawOn(c, (W - pw) / 2, y - ph)
@@ -640,11 +653,12 @@ def build_scripts():
         scatter_sparkles(c, 8, seed=121, y_range=(1.5 * inch, H - 1.5 * inch))
     swirl_divider(c, y)
     y -= 0.4 * inch
-    y = script_header(c, "Every Boundary Is a Vote", y, size=24)
-    p = Paragraph("Every boundary you hold is a vote for the woman you're becoming. "
-                  "If this cheat sheet helped, the <b>Healing Vibe Journal</b> goes deeper \u2014 "
-                  "and a free 20-minute Vibe Session with Christina is the fastest way "
-                  "to get personalized support. shesthevibe.co",
+    y = script_header(c, "Every Boundary Is a Vote (Vote for Her)", y, size=24)
+    p = Paragraph("Every boundary you hold is a vote for the woman you're becoming \u2014 "
+                  "and she's already so proud of you. If this little cheat sheet gave you your "
+                  "words back, the <b>Healing Vibe Journal</b> goes even deeper. And a free "
+                  "20-minute Vibe Session with Christina? That's the fast track to personalized "
+                  "support. Come get your power back: shesthevibe.co",
                   prompt_style(11, DARK, center=True))
     pw, ph = p.wrap(W - 2.4 * inch, 3 * inch)
     p.drawOn(c, (W - pw) / 2, y - ph)
