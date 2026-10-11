@@ -127,8 +127,8 @@
       <div class="container" style="max-width: 900px;">
         <h2 class="section-title">Free Downloads</h2>
         <p class="service-desc" style="text-align: center; font-size: 1.05rem; line-height: 1.9; max-width: 680px; margin: 0 auto 40px;">
-          Start here — no email required, no strings attached. These are yours.
-          Print them, screenshot them, make them part of your routine.
+          Start here — pop in your email and they&rsquo;re yours. You&rsquo;ll also join the Vibe list
+          for love notes and new drops. No spam, ever.
         </p>
         <div class="resource-journey">
 
@@ -143,7 +143,7 @@
             </div>
             <h3>50 Journal Prompts for When You&rsquo;re Stuck</h3>
             <p>Fifty original prompts across self-discovery, overwhelm, relationships, breaking cycles, and dreaming bigger — with writing space for each one.</p>
-            <p><a class="btn btn-burgundy" href="freebies/50-journal-prompts.pdf" download>Download PDF</a></p>
+            <p><button type="button" class="btn btn-burgundy freebie-btn" data-pdf="freebies/50-journal-prompts.pdf" data-name="50 Journal Prompts for When You're Stuck">Get the PDF</button></p>
           </div>
 
           <div class="journey-step">
@@ -157,7 +157,7 @@
             </div>
             <h3>The 5-Minute Morning Reset</h3>
             <p>Five quick steps — breathe, intention, gratitude, body check, today&rsquo;s vibe — to start your day grounded instead of reactive. Print it and keep it by your bed.</p>
-            <p><a class="btn btn-burgundy" href="freebies/5-minute-morning-reset.pdf" download>Download PDF</a></p>
+            <p><button type="button" class="btn btn-burgundy freebie-btn" data-pdf="freebies/5-minute-morning-reset.pdf" data-name="The 5-Minute Morning Reset">Get the PDF</button></p>
           </div>
 
           <div class="journey-step">
@@ -171,7 +171,7 @@
             </div>
             <h3>Boundary Scripts: What to Say When&hellip;</h3>
             <p>Ready-to-use scripts for saying no, handling family, work, friends, and pushback — in natural language, not corporate-speak. Your cheat sheet for holding the line.</p>
-            <p><a class="btn btn-burgundy" href="freebies/boundary-scripts.pdf" download>Download PDF</a></p>
+            <p><button type="button" class="btn btn-burgundy freebie-btn" data-pdf="freebies/boundary-scripts.pdf" data-name="Boundary Scripts: What to Say When...">Get the PDF</button></p>
           </div>
 
         </div>
@@ -355,6 +355,24 @@
       </nav>
     </div>
   </footer>
+
+  <!-- ============ FREEBIE EMAIL-CAPTURE MODAL ============ -->
+  <div class="freebie-modal" id="freebieModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="freebieModalTitle">
+    <div class="freebie-modal-card">
+      <button type="button" class="freebie-modal-close" id="freebieModalClose" aria-label="Close">&times;</button>
+      <p class="freebie-modal-script">A little gift for you</p>
+      <h3 id="freebieModalTitle">Get Your Free Download</h3>
+      <p class="freebie-modal-desc">Drop your email and <span id="freebieModalName"></span> is yours — plus you&rsquo;ll get love notes from the Vibe. No spam, ever.</p>
+      <form class="freebie-modal-form" id="freebieModalForm" novalidate>
+        <label class="sr-only" for="freebieName">Your name</label>
+        <input id="freebieName" type="text" name="name" placeholder="Your name" autocomplete="name">
+        <label class="sr-only" for="freebieEmail">Your email address</label>
+        <input id="freebieEmail" type="email" name="email" placeholder="Your email address" required autocomplete="email">
+        <button type="submit" class="btn btn-burgundy">Send Me the PDF</button>
+        <p class="freebie-modal-note">We respect your inbox. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

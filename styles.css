@@ -1362,3 +1362,68 @@ a { text-decoration: none; color: inherit; }
 .tint-soft { background: rgba(176,141,79,.06); border-radius: 18px; }
 /* Small centered gold sparkle ornament for tight transitions */
 .sparkle-ornament { text-align: center; color: #b08d4f; margin: 8px 0; font-size: 1.1rem; letter-spacing: .6em; }
+
+/* ---------- Freebie email-capture modal ---------- */
+.freebie-modal {
+  position: fixed; inset: 0; z-index: 300;
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+  background: rgba(26, 8, 13, 0.66);
+  backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px);
+  opacity: 0; visibility: hidden;
+  transition: opacity .25s ease, visibility .25s ease;
+}
+.freebie-modal.open { opacity: 1; visibility: visible; }
+.freebie-modal-card {
+  position: relative;
+  width: 100%; max-width: 440px;
+  background: var(--cream, #faf5ea);
+  border: 1px solid rgba(201, 162, 94, .55);
+  border-radius: 18px;
+  padding: 44px 36px 34px;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .35);
+  transform: translateY(14px) scale(.98);
+  transition: transform .25s ease;
+  max-height: 90vh; overflow-y: auto;
+}
+.freebie-modal.open .freebie-modal-card { transform: none; }
+.freebie-modal-card::before {
+  content: ""; position: absolute; inset: 8px;
+  border: 1px solid rgba(201, 162, 94, .35);
+  border-radius: 12px; pointer-events: none;
+}
+.freebie-modal-close {
+  position: absolute; top: 8px; right: 14px; z-index: 1;
+  background: none; border: none; cursor: pointer;
+  font-size: 1.9rem; line-height: 1; color: #a89a8b;
+}
+.freebie-modal-close:hover { color: #451425; }
+.freebie-modal-script {
+  font-family: var(--font-script, "Pinyon Script", cursive);
+  font-size: 1.75rem; color: #b08d4f; margin: 0 0 2px;
+}
+.freebie-modal-card h3 {
+  font-family: var(--font-display, "Playfair Display", serif);
+  color: #451425; font-size: 1.6rem; margin: 0 0 10px; font-weight: 700;
+}
+.freebie-modal-desc {
+  color: #5a5a5a; font-size: .98rem; line-height: 1.7; margin: 0 0 22px;
+}
+.freebie-modal-desc span { font-weight: 600; color: #451425; }
+.freebie-modal-form input {
+  width: 100%; box-sizing: border-box;
+  padding: 13px 16px; margin-bottom: 12px;
+  border: 1px solid rgba(82, 19, 36, .25); border-radius: 10px;
+  font-size: 1rem; font-family: "Jost", sans-serif; background: #fff; color: #2b2320;
+}
+.freebie-modal-form input::placeholder { color: #a89a8b; }
+.freebie-modal-form input:focus { outline: 2px solid #c9a25e; outline-offset: -2px; }
+.freebie-modal-form .btn { width: 100%; margin-top: 4px; cursor: pointer; }
+.freebie-modal-note { font-size: .8rem; color: #a89a8b; margin: 14px 0 0; }
+.freebie-modal .join-success { color: #451425; font-size: 1.05rem; line-height: 1.8; margin: 10px 0; }
+@media (max-width: 480px) {
+  .freebie-modal-card { padding: 38px 24px 28px; }
+  .freebie-modal-script { font-size: 1.5rem; }
+  .freebie-modal-card h3 { font-size: 1.4rem; }
+}
