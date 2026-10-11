@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>She's The Vibe — Commissary Half-Sheet Flyer (5.5" × 8.5")</title>
+<style>
+  @page {
+    size: 5.5in 8.5in;
+    margin: 0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 5.5in;
+    height: 8.5in;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .flyer {
+    width: 5.5in;
+    height: 8.5in;
+    background: #451425;
+    color: #F7E7CE;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.38in 0.5in 0.32in;
+  }
+  /* subtle gold radial glow at top */
+  .flyer::before {
+    content: "";
+    position: absolute;
+    top: -2in;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7in;
+    height: 4in;
+    background: radial-gradient(ellipse at center, rgba(201,169,110,0.22) 0%, rgba(201,169,110,0) 70%);
+    pointer-events: none;
+  }
+  /* thin gold frame */
+  .flyer::after {
+    content: "";
+    position: absolute;
+    inset: 0.18in;
+    border: 2px solid #C9A96E;
+    border-radius: 6px;
+    pointer-events: none;
+  }
+
+  .kicker {
+    font-size: 11pt;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #C9A96E;
+    margin-bottom: 0.12in;
+    position: relative;
+    z-index: 1;
+  }
+  .headline {
+    font-size: 27pt;
+    line-height: 1.1;
+    font-weight: bold;
+    color: #F7E7CE;
+    margin-bottom: 0.06in;
+    position: relative;
+    z-index: 1;
+  }
+  .headline .gold { color: #C9A96E; font-style: italic; }
+  .subhead {
+    font-size: 12pt;
+    font-style: italic;
+    color: #F7E7CE;
+    opacity: 0.92;
+    margin-bottom: 0.14in;
+    position: relative;
+    z-index: 1;
+  }
+
+  .brand-mark {
+    width: 1.7in;
+    height: 1.7in;
+    border-radius: 50%;
+    border: 3px solid #C9A96E;
+    overflow: hidden;
+    margin-bottom: 0.13in;
+    position: relative;
+    z-index: 1;
+    background: #2a0a14;
+    box-shadow: 0 0 24px rgba(201,169,110,0.35);
+  }
+  .brand-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.12in;
+    position: relative;
+    z-index: 1;
+    color: #C9A96E;
+    font-size: 13pt;
+  }
+  .divider::before, .divider::after {
+    content: "";
+    width: 1.15in;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #C9A96E);
+  }
+  .divider::after {
+    background: linear-gradient(to left, transparent, #C9A96E);
+  }
+
+  .pillars {
+    font-size: 11.5pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #C9A96E;
+    margin-bottom: 0.1in;
+    position: relative;
+    z-index: 1;
+  }
+  .desc {
+    font-size: 10.5pt;
+    line-height: 1.45;
+    max-width: 4.3in;
+    margin-bottom: 0.13in;
+    position: relative;
+    z-index: 1;
+  }
+  .desc strong { color: #C9A96E; }
+
+  .qr-block {
+    background: #F7E7CE;
+    border-radius: 12px;
+    padding: 0.16in 0.3in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.45in;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+  }
+  .qr-block img {
+    width: 1.4in;
+    height: 1.4in;
+    display: block;
+  }
+  .cta {
+    margin-top: 0.08in;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #451425;
+  }
+  .url {
+    font-size: 9.5pt;
+    color: #451425;
+    opacity: 0.75;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0.28in;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 8.5pt;
+    letter-spacing: 1px;
+    color: #C9A96E;
+    opacity: 0.9;
+    z-index: 1;
+  }
+
+  /* Screen preview helpers (ignored in print) */
+  @media screen {
+    body {
+      background: #2a2a2a;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px;
+      min-height: 100vh;
+      height: auto;
+      width: auto;
+    }
+    .flyer { box-shadow: 0 8px 40px rgba(0,0,0,0.5); flex-shrink: 0; }
+    .print-note {
+      display: block !important;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: #451425;
+      color: #F7E7CE;
+      text-align: center;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+  }
+  .print-note { display: none; }
+  @media print {
+    .print-note { display: none !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="flyer">
+    <div class="kicker">For everyone who does it all</div>
+
+    <div class="headline">
+      You feed<br>everyone else.<br>
+      <span class="gold">Who's feeding<br>your vibe?</span>
+    </div>
+    <div class="subhead">More than a brand &mdash; it's a lifestyle.</div>
+
+    <div class="brand-mark">
+      <img src="brand-illustration.png" alt="She's The Vibe">
+    </div>
+
+    <div class="divider">&#10022;</div>
+
+    <div class="pillars">Practical &nbsp;&middot;&nbsp; Pretty &nbsp;&middot;&nbsp; You</div>
+
+    <p class="desc">
+      <strong>She's The Vibe</strong> is digital planners, guided journals &amp;
+      handmade jewelry for the woman building her empire &mdash; in the kitchen,
+      at the desk, and everywhere in between. Get organized, stay inspired,
+      and look good doing it.
+    </p>
+
+    <div class="qr-block">
+      <img src="qr-links.png" alt="Scan to visit She's The Vibe">
+      <div class="cta">Scan to shop &#10022;</div>
+    </div>
+
+    <div class="footer">SHE'S THE VIBE &nbsp;&middot;&nbsp; A WOOD FAMILY CREATIONS LLC BRAND</div>
+  </div>
+
+  <div class="print-note">
+    Print at <strong>100% / Actual size</strong> on US Letter, then cut in half &mdash; or print directly at 5.5&Prime; &times; 8.5&Prime;. Use color / best quality.
+  </div>
+</body>
+</html>

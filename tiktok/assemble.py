@@ -15,12 +15,13 @@ def build(name, slides):
     inputs, filters = [], []
     for i, (fn, dur) in enumerate(slides):
         frames = max(2, int(round(dur * FPS)))
-        inputs += ["-loop", "1", "-t", str(dur), "-i", os.path.join(S, fn)]
-        # upscale then gentle push-in zoom so every cut feels alive
+        # NOTE: single still input (no -loop). zoompan d=frames then emits
+        # exactly `frames` output frames; `on` counts 0..frames-1 for the push-in.
+        inputs += ["-i", os.path.join(S, fn)]
         filters.append(
             f"[{i}:v]scale=1080:1920,"
             f"zoompan=z='1+0.10*on/{frames}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
-            f":d={frames}:s=1080x1920:fps={FPS},format=yuv420p[v{i}]"
+            f":d={frames}:s=1080x1920:fps={FPS},format=yuv420p,setpts=PTS-STARTPTS[v{i}]"
         )
     n = len(slides)
     vlabels = "".join(f"[v{i}]" for i in range(n))
