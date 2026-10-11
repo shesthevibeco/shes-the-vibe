@@ -1002,6 +1002,31 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.95rem;
 }
 
+/* Booking CTA — free Vibe Session call-to-action */
+.booking-cta {
+  max-width: 720px;
+  margin: 56px auto 8px;
+  padding: 40px 36px;
+  text-align: center;
+  background: var(--cream, #F7E7CE);
+  border: 1px solid #C9A96E;
+  border-radius: 16px;
+}
+.booking-cta .booking-script {
+  font-family: 'Pinyon Script', 'Playfair Display', serif;
+  font-size: 1.9rem;
+  color: var(--burgundy-900, #451425);
+  margin: 0 0 10px;
+}
+.booking-cta p {
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.booking-cta .btn {
+  margin-top: 10px;
+}
+
 .soon-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
