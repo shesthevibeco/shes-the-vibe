@@ -40,6 +40,8 @@ SCRIPT = "Parisienne"
 SERIF = "Playfair"
 SANS = "Montserrat"
 
+BOTTOM = 0.9 * inch  # nothing may be drawn below this y-coordinate
+
 # ============================================================
 # WHIMSY DRAWING HELPERS
 # ============================================================
@@ -303,6 +305,15 @@ SECTION_TAGLINES = {
     "Dreaming Bigger": "go ahead, want the big things",
 }
 
+def _prompts_section_head(c, sec, y):
+    """Script section title + tagline for journal-prompt pages."""
+    y = script_header(c, sec, y - 5, size=26)
+    c.setFillColor(MUTEDROSE)
+    c.setFont(ITALIC, 11)
+    c.drawCentredString(W / 2, y + 6, SECTION_TAGLINES.get(sec, ""))
+    y -= 0.28 * inch
+    return y
+
 def build_prompts():
     c = canvas.Canvas(os.path.join(OUT, "50-journal-prompts.pdf"), pagesize=LETTER)
     c.setTitle("50 Journal Prompts for When You're Stuck \u2014 She's The Vibe")
@@ -342,29 +353,33 @@ def build_prompts():
     y -= 0.2 * inch
     swirl_divider(c, y)
     c.showPage()
-    # sections: 5 prompts per page with writing lines
+    # sections: prompts flow with dynamic page breaks so nothing is cut off
     for si, (sec, prompts) in enumerate(SECTIONS):
-        for chunk_start in range(0, 10, 5):
-            y = page_header(c, f"part {si + 1} of 5", seed=30 + si * 10 + chunk_start)
-            scatter_sparkles(c, 6, seed=40 + si * 10 + chunk_start,
-                             y_range=(1 * inch, H - 1.6 * inch))
-            # script section title + tagline
-            y = script_header(c, sec, y - 5, size=26)
-            c.setFillColor(MUTEDROSE)
-            c.setFont(ITALIC, 11)
-            c.drawCentredString(W / 2, y + 6, SECTION_TAGLINES.get(sec, ""))
-            y -= 0.28 * inch
-            for pi in range(chunk_start, min(chunk_start + 5, 10)):
-                num = si * 10 + pi + 1
-                sticker_badge(c, inch + 0.22 * inch, y - 2, 13, num,
-                              SOFTPINK if num % 2 == 1 else BLUSH)
-                pr = Paragraph(prompts[pi], prompt_style(11, DARK))
-                pw, ph = pr.wrap(W - 2.9 * inch, 2 * inch)
-                pr.drawOn(c, inch + 0.55 * inch, y - ph + 6)
-                y -= ph + 0.2 * inch
-                draw_lines(c, inch + 0.3 * inch, y, W - 2.6 * inch, 4)
-                y -= 4 * 0.32 * inch + 0.3 * inch
-            c.showPage()
+        y = page_header(c, f"part {si + 1} of 5", seed=30 + si * 10)
+        scatter_sparkles(c, 6, seed=40 + si * 10,
+                         y_range=(1 * inch, H - 1.6 * inch))
+        y = _prompts_section_head(c, sec, y)
+        for pi in range(10):
+            num = si * 10 + pi + 1
+            pr = Paragraph(prompts[pi], prompt_style(11, DARK))
+            pw, ph = pr.wrap(W - 2.9 * inch, 2 * inch)
+            # vertical space this prompt block needs: text + gap + 4 writing
+            # lines + trailing spacing. Break to a fresh page if it won't fit.
+            need = ph + 0.2 * inch + 4 * 0.32 * inch + 0.3 * inch
+            if y - need < BOTTOM:
+                c.showPage()
+                y = page_header(c, f"part {si + 1} of 5 (cont.)",
+                                seed=30 + si * 10 + pi)
+                scatter_sparkles(c, 6, seed=40 + si * 10 + pi,
+                                 y_range=(1 * inch, H - 1.6 * inch))
+                y = _prompts_section_head(c, sec, y)
+            sticker_badge(c, inch + 0.22 * inch, y - 2, 13, num,
+                          SOFTPINK if num % 2 == 1 else BLUSH)
+            pr.drawOn(c, inch + 0.55 * inch, y - ph + 6)
+            y -= ph + 0.2 * inch
+            draw_lines(c, inch + 0.3 * inch, y, W - 2.6 * inch, 4)
+            y -= 4 * 0.32 * inch + 0.3 * inch
+        c.showPage()
     # closing page
     y = page_header(c, "you did it, babe", seed=99)
     scatter_sparkles(c, 12, seed=100, y_range=(1.5 * inch, H - 1.5 * inch))
@@ -445,11 +460,11 @@ def build_reset():
     p.drawOn(c, (W - pw) / 2, y - ph)
     y -= ph + 0.4 * inch
     for i, (word, minute, desc, write) in enumerate(RESET_STEPS):
-        if y < 2.4 * inch:
+        card_h = 1.7 * inch
+        if y - card_h < BOTTOM:
             c.showPage()
             y = page_header(c, "keep going, you're glowing", seed=70 + i)
             scatter_sparkles(c, 6, seed=80 + i, y_range=(1 * inch, H - 1.6 * inch))
-        card_h = 1.7 * inch
         # blush card with gold border
         c.setFillColor(BLUSH if i % 2 == 0 else CREAM)
         c.setStrokeColor(GOLD)
@@ -484,7 +499,7 @@ def build_reset():
         # tiny heart on card
         doodle_heart(c, W - inch - 0.35 * inch, y - 0.35 * inch, 6, SOFTPINK)
         y -= card_h + 0.24 * inch
-    if y < 1.8 * inch:
+    if y < 3.2 * inch:
         c.showPage()
         y = page_header(c, "you did it", seed=90)
         scatter_sparkles(c, 8, seed=91, y_range=(1.5 * inch, H - 1.5 * inch))
@@ -611,7 +626,7 @@ def build_scripts():
             c.line(W / 2 - 1 * inch, y, W / 2 + 1 * inch, y)
             doodle_heart(c, W / 2, y, 6, BLUSH)
             y -= 0.3 * inch
-    if y < 2.0 * inch:
+    if y < 3.2 * inch:
         c.showPage()
         y = page_header(c, "say it with your chest", seed=120)
         scatter_sparkles(c, 8, seed=121, y_range=(1.5 * inch, H - 1.5 * inch))
