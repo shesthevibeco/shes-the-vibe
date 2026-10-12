@@ -216,8 +216,7 @@ var WELCOME_HTML = [
 '  </table>',
 '</body>',
 '</html>'
-].join('
-');
+].join('\n');
 
 // Column indices (1-based) in Master Tracker
 var COL = {
