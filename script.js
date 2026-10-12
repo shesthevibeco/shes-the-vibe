@@ -218,3 +218,59 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+// ============ SITE SEARCH ============
+(function() {
+  var overlay = document.getElementById('searchOverlay');
+  if (!overlay) return;
+  var input = document.getElementById('searchOverlayInput');
+  var results = document.getElementById('searchOverlayResults');
+  var closeBtn = document.getElementById('searchOverlayClose');
+  var trigger = document.getElementById('searchTrigger');
+  var searchIndex = null;
+
+  function openSearch() {
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    if (!searchIndex) {
+      fetch('search-index.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) { searchIndex = data; });
+    }
+    setTimeout(function() { input.focus(); }, 100);
+  }
+  function closeSearch() {
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    input.value = '';
+    results.innerHTML = '';
+  }
+
+  if (trigger) {
+    trigger.addEventListener('click', function(e) { e.preventDefault(); openSearch(); });
+  }
+  if (closeBtn) closeBtn.addEventListener('click', closeSearch);
+  overlay.addEventListener('click', function(e) { if (e.target === overlay) closeSearch(); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeSearch(); });
+
+  input.addEventListener('input', function() {
+    var q = input.value.trim().toLowerCase();
+    if (!q || q.length < 2 || !searchIndex) {
+      results.innerHTML = q.length >= 2 ? '<p class="no-results">Loading...</p>' : '';
+      return;
+    }
+    var matches = searchIndex.filter(function(page) {
+      var haystack = (page.title + ' ' + page.headings.join(' ') + ' ' + page.desc).toLowerCase();
+      return q.split(/\s+/).every(function(word) { return haystack.indexOf(word) >= 0; });
+    }).slice(0, 8);
+
+    if (!matches.length) {
+      results.innerHTML = '<p class="no-results">No matches found. Try "coaching", "journal", or "shop".</p>';
+      return;
+    }
+    results.innerHTML = matches.map(function(page) {
+      return '<a href="' + page.url + '"><div class="result-title">' + page.title + '</div>' +
+        (page.desc ? '<div class="result-desc">' + page.desc + '</div>' : '') + '</a>';
+    }).join('');
+  });
+})();

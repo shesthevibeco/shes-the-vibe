@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Untangled - Single Clarity Call",
+    "amount": "$175.00",
+    "product_id": "prod_VQMF9mktgt7DMk",
+    "price_id": "price_1UPVX2I3OWsYAua1tvjlkINC",
+    "payment_link": "https://buy.stripe.com/4gM8wPePX9p11X24Yc8Ra00"
+  },
+  {
+    "name": "Untangled - Find Your Footing (4 sessions)",
+    "amount": "$597.00",
+    "product_id": "prod_VQMFRNO3UmbEqm",
+    "price_id": "price_1UPVX4I3OWsYAua1kngoFHrc",
+    "payment_link": "https://buy.stripe.com/8x26oHdLTat5bxCeyM8Ra01"
+  },
+  {
+    "name": "Untangled - The Full Untangle (8 sessions)",
+    "amount": "$997.00",
+    "product_id": "prod_VQMFGVMeWKyG2B",
+    "price_id": "price_1UPVX6I3OWsYAua1Zoxwi1dL",
+    "payment_link": "https://buy.stripe.com/cNi5kDcHP58Laty1M08Ra02"
+  },
+  {
+    "name": "Cycle Breaker - Single Pattern Interrupt",
+    "amount": "$175.00",
+    "product_id": "prod_VQMFzSWW76Ikzi",
+    "price_id": "price_1UPVX8I3OWsYAua1T8yXPNYa",
+    "payment_link": "https://buy.stripe.com/bJe5kD7nvcBdgRW8ao8Ra03"
+  },
+  {
+    "name": "Cycle Breaker - Name It to Change It (4 sessions)",
+    "amount": "$597.00",
+    "product_id": "prod_VQMFr8LL8yo76l",
+    "price_id": "price_1UPVXAI3OWsYAua13UtQOCep",
+    "payment_link": "https://buy.stripe.com/7sYfZhdLT58L8lqeyM8Ra04"
+  },
+  {
+    "name": "Cycle Breaker - The Full Rewrite (8 sessions)",
+    "amount": "$1097.00",
+    "product_id": "prod_VQMFg3y7svMgBI",
+    "price_id": "price_1UPVXCI3OWsYAua18wFBfYl3",
+    "payment_link": "https://buy.stripe.com/14A6oHcHP58L316eyM8Ra05"
+  },
+  {
+    "name": "Soft Reset - Single Honest Audit",
+    "amount": "$150.00",
+    "product_id": "prod_VQMFiljz0znDxd",
+    "price_id": "price_1UPVXEI3OWsYAua19wSwsier",
+    "payment_link": "https://buy.stripe.com/7sY8wP0Z78kX0SYgGU8Ra06"
+  },
+  {
+    "name": "Soft Reset - Refill the Cup (4 sessions)",
+    "amount": "$547.00",
+    "product_id": "prod_VQMFGIOoVG2mw1",
+    "price_id": "price_1UPVXGI3OWsYAua1J1tfbpaY",
+    "payment_link": "https://buy.stripe.com/bJe5kDgY5bx91X20HW8Ra07"
+  },
+  {
+    "name": "Soft Reset - The Full Restoration (8 sessions)",
+    "amount": "$947.00",
+    "product_id": "prod_VQMFu1w0MrCaZR",
+    "price_id": "price_1UPVXII3OWsYAua1HapDuDY7",
+    "payment_link": "https://buy.stripe.com/5kQ7sLePXgRtaty2Q48Ra08"
+  }
+]

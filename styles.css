@@ -1425,6 +1425,70 @@ a { text-decoration: none; color: inherit; }
 .freebie-modal-form .btn { width: 100%; margin-top: 4px; cursor: pointer; }
 .freebie-modal-note { font-size: .8rem; color: #a89a8b; margin: 14px 0 0; }
 .freebie-modal .join-success { color: #451425; font-size: 1.05rem; line-height: 1.8; margin: 10px 0; }
+.join-success {
+  background: #f0e8d8;
+  border: 2px solid #C9A96E;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #451425;
+  line-height: 1.7;
+  margin: 16px 0;
+}
+.join-success::before {
+  content: '\2713';
+  display: block;
+  font-size: 2.5rem;
+  color: #4a7c59;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* ---- Search Overlay ---- */
+.search-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 10, 18, 0.85);
+  z-index: 9999; display: none;
+  align-items: flex-start; justify-content: center;
+  padding: 80px 20px 20px;
+}
+.search-overlay.open { display: flex; }
+.search-overlay-card {
+  background: #FFFDF8; border-radius: 16px;
+  max-width: 560px; width: 100%;
+  padding: 36px; position: relative;
+  border: 2px solid #C9A96E;
+  max-height: 70vh; overflow-y: auto;
+}
+.search-overlay-close {
+  position: absolute; top: 12px; right: 16px;
+  background: none; border: none;
+  font-size: 2rem; color: #451425; cursor: pointer;
+}
+.search-overlay-script {
+  font-family: var(--font-script, 'Pinyon Script', cursive);
+  color: #C9A96E; font-size: 1.3rem; margin: 0 0 4px;
+}
+.search-overlay-card h3 {
+  font-size: 1.4rem; color: #451425; margin: 0 0 16px;
+}
+.search-overlay-card input {
+  width: 100%; padding: 14px 16px;
+  border: 2px solid #C9A96E; border-radius: 8px;
+  font-size: 1rem; margin-bottom: 16px;
+  box-sizing: border-box;
+}
+.search-overlay-card input:focus { outline: none; border-color: #451425; }
+.search-overlay-results a {
+  display: block; padding: 12px;
+  border-bottom: 1px solid #f0e8d8;
+  text-decoration: none; color: #451425;
+}
+.search-overlay-results a:hover { background: #faf5ec; }
+.search-overlay-results .result-title { font-weight: 600; font-size: 1rem; }
+.search-overlay-results .result-desc { font-size: 0.85rem; color: #8a6a4a; margin-top: 4px; }
+.search-overlay-results .no-results { padding: 20px; text-align: center; color: #8a6a4a; }
 @media (max-width: 480px) {
   .freebie-modal-card { padding: 38px 24px 28px; }
   .freebie-modal-script { font-size: 1.5rem; }
