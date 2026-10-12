@@ -151,7 +151,7 @@ a { text-decoration: none; color: inherit; }
   border-bottom-color: var(--gold);
 }
 
-.header-icons { display: flex; gap: 20px; margin-left: 18px; padding-left: 18px; border-left: 1px solid rgba(201, 169, 110, 0.25); }
+.header-icons { display: flex; gap: 20px; margin-left: 28px; padding-left: 28px; border-left: 1px solid rgba(201, 169, 110, 0.35); flex-shrink: 0; }
 
 .header-icons a {
   color: rgba(250, 245, 234, 0.85);
