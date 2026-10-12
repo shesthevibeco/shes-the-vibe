@@ -1271,7 +1271,7 @@ a { text-decoration: none; color: inherit; }
 .mobile-menu a.active { color: var(--gold-light); }
 .mobile-menu.open { display: block; }
 
-@media (max-width: 1020px) {
+@media (max-width: 1200px) {
   .menu-toggle { display: block; }
   .header-inner { gap: 12px; }
   .main-nav { display: none; }
