@@ -132,7 +132,7 @@ a { text-decoration: none; color: inherit; }
   white-space: nowrap;
 }
 
-.main-nav { display: flex; gap: 18px; flex-shrink: 1; min-width: 0; }
+.main-nav { display: flex; gap: 18px; flex-shrink: 1; min-width: 0; margin-right: auto; padding-right: 20px; }
 
 .main-nav a {
   font-size: 0.7rem;
