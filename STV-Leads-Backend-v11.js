@@ -376,7 +376,7 @@ function logToLegacyTab(ss, data, email, timestamp) {
     if (type === 'contact') {
       var cs = ss.getSheetByName('Contact Messages');
       if (cs) cs.appendRow([timestamp, data.name || '', email, data.message || '']);
-    } else if (type === 'book' || type === 'bookinterest') {
+    } else if (type === 'book' || type === 'bookinterest' || type === 'book-interest') {
       var bs = ss.getSheetByName('Book Interest');
       if (bs) bs.appendRow([timestamp, data.name || '', email]);
     } else {
