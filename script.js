@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain' },
-        body: JSON.stringify({ name: name, email: email, page: window.location.pathname, source: 'freebie: ' + title })
+        body: JSON.stringify({ type: 'freebie', freebie: title, name: name, email: email, page: window.location.pathname })
       });
     }
 
