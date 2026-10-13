@@ -73,6 +73,53 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Permanent jewelry booking form -> Permanent Jewelry tab (+ Master Tracker)
+  document.querySelectorAll('.pj-booking-form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      function val(n) { var el = form.querySelector('[name="' + n + '"]'); return el ? el.value.trim() : ''; }
+      var name = val('name');
+      var email = val('email');
+      var waiver = form.querySelector('[name="waiver"]');
+      if (!name || !email || !waiver || !waiver.checked) return;
+      var btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      var original = btn.textContent;
+      btn.textContent = 'Sending...';
+      fetch(NEWSLETTER_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({
+          type: 'permanent-jewelry',
+          name: name,
+          email: email,
+          phone: val('phone'),
+          lane: val('lane'),
+          piece: val('piece'),
+          chain_style: val('chain_style'),
+          metal: val('metal'),
+          size: val('size'),
+          quantity: val('quantity'),
+          addons: val('addons'),
+          city: val('city'),
+          distance: val('distance'),
+          outlet: val('outlet'),
+          inspo_url: val('inspo_url'),
+          notes: val('notes'),
+          waiver: 'yes',
+          page: window.location.pathname
+        })
+      }).then(function () {
+        form.innerHTML = '<p class="join-success">Request sent! I read everything myself — watch your inbox for your next steps, the booking calendar, and your Before Your Appointment packet.</p>';
+      }).catch(function () {
+        btn.disabled = false;
+        btn.textContent = original;
+        alert('Hmm, that didn\'t go through — please try again or email christina@shesthevibe.co directly.');
+      });
+    });
+  });
+
   // Book waitlist form -> Book Interest tab
   document.querySelectorAll('.book-interest-form').forEach(function (form) {
     form.addEventListener('submit', function (e) {

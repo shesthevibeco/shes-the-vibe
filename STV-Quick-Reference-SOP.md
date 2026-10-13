@@ -22,7 +22,7 @@
 **→ Email: christina@shesthevibe.co**
 - Prospects download the pre-booking packet + intake form from the coaching page
 - They email the completed intake form back to you
-- You review it → then send the Calendly link for a free 20-min Vibe Session
+- You review it → then send the Google Calendar booking link (https://calendar.app.google/Ftyz38QiHtRcjiHN8) for a free 20-min Vibe Session
 
 ### Coaching payments
 **→ Stripe Dashboard** (stripe.com → log in)
@@ -62,7 +62,7 @@
 1. **Prospect visits** shesthevibe.co/coaching.html
 2. **Downloads** pre-booking packet + intake form
 3. **Emails** completed intake to christina@shesthevibe.co
-4. **You review** intake for fit → send Calendly link for free Vibe Session
+4. **You review** intake for fit → send Google Calendar booking link for free Vibe Session
 5. **Discovery call** → if it's a fit, send Closing Package (from Drive)
 6. **Client signs** agreement → pays deposit via Stripe link
 7. **Sessions begin** 🎉
