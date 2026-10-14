@@ -381,14 +381,31 @@ a { text-decoration: none; color: inherit; }
   object-fit: cover;
 }
 
+/* Legibility scrim: a soft burgundy gradient rising from the bottom of
+   each card so the champagne text stays readable over light photos
+   (tote, dashboard) without a hard box behind it. */
+.category-art::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 58%;
+  background: linear-gradient(to top, rgba(36, 6, 14, 0.88) 0%, rgba(36, 6, 14, 0.55) 48%, rgba(36, 6, 14, 0) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .category-art span {
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.5rem;
   color: var(--gold-pale);
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 1px 3px rgba(36, 6, 14, 0.9), 0 2px 14px rgba(0, 0, 0, 0.55);
+  text-align: center;
+  padding: 0 12px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .cat-digital {
@@ -422,6 +439,7 @@ a { text-decoration: none; color: inherit; }
   right: 20px;
   color: rgba(233, 211, 160, 0.7);
   font-size: 1.3rem;
+  z-index: 2;
 }
 
 .category-label {
