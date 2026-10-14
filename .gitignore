@@ -1,0 +1,10 @@
+# Working folders kept OUT of the Pages repo (site hit the 1GB Pages limit 2026-10-14; archived at ~/workspace/stv-repo-archive-2026-10-14, local copies restored untracked)
+tiktok/
+reels/
+etsy-videos/
+social-calendar/
+google-business/
+pinterest-pins/
+digital-products/*.pdf
+digital-products/*.xlsx
+digital-products/*.py
