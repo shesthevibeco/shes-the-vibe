@@ -40,6 +40,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Pinyon+Script&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+  <style>/* Explore grid: 5 cards (revamp 2026-11-10) */ #explore .category-grid{grid-template-columns:repeat(5,1fr);} @media (max-width:900px){#explore .category-grid{grid-template-columns:repeat(2,1fr);}}</style>
 </head>
 
 <body>
@@ -61,7 +62,6 @@
 
       <nav class="main-nav" aria-label="Main navigation">
         <a href="index.html" class="active">Home</a>
-        <a href="shop.html">Shop</a>
         <a href="services.html">Services</a>
         <a href="coaching.html">Coaching</a>
         <a href="permanent-jewelry.html">Permanent Jewelry</a>
@@ -70,6 +70,7 @@
         <a href="blog.html">Blog</a>
         <a href="book.html">Book</a>
         <a href="resources.html">Resources</a>
+        <a href="shop.html">Shop</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -86,7 +87,6 @@
   <div class="mobile-menu" id="mobileMenu">
     <nav aria-label="Mobile navigation">
           <a href="index.html" class="active">Home</a>
-          <a href="shop.html">Shop</a>
           <a href="services.html">Services</a>
           <a href="coaching.html">Coaching</a>
           <a href="permanent-jewelry.html">Permanent Jewelry</a>
@@ -95,6 +95,7 @@
           <a href="blog.html">Blog</a>
         <a href="book.html">Book</a>
           <a href="resources.html">Resources</a>
+          <a href="shop.html">Shop</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
     </nav>
@@ -125,6 +126,8 @@
           <h1>She&rsquo;s<br>The Vibe</h1>
           <p class="hero-script">More Than a Brand<br>It&rsquo;s a Lifestyle</p>
           <a href="#explore" class="btn btn-gold">Explore the Vibe</a>
+          <a href="https://calendar.app.google/Ftyz38QiHtRcjiHN8" class="btn btn-burgundy" target="_blank" rel="noopener" style="margin-left:10px;">Book Your Free Vibe Session</a>
+          <a href="permanent-jewelry-book.html" class="btn btn-burgundy" style="margin-left:10px;">Book Your Appointment</a>
         </div>
 
         <div class="hero-words" aria-hidden="true">
@@ -166,6 +169,47 @@
       </div>
     </section>
 
+    <!-- ============ FOCAL: COACHING ============ -->
+    <section class="story">
+      <div class="container story-grid">
+        <div class="story-copy">
+          <div class="sparkle-ornament" aria-hidden="true">✦ ✦ ✦</div>
+          <p class="story-script">Life Coaching &amp; Mentorship</p>
+          <p class="story-text">
+            1:1 coaching with Christina &mdash; real talk, real strategy, and zero
+            judgment for anyone done playing small.
+          </p>
+          <a href="https://calendar.app.google/Ftyz38QiHtRcjiHN8" class="btn btn-gold" target="_blank" rel="noopener">Book Your Free Vibe Session</a>
+          <a href="coaching.html" class="btn btn-burgundy" style="margin-left:10px;">Coaching</a>
+        </div>
+        <div class="story-visual">
+          <img src="mockups/photos/coaching-warm.jpg" alt="She's The Vibe life coaching" class="story-photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOCAL: PERMANENT JEWELRY ============ -->
+    <section class="story">
+      <div class="container story-grid">
+        <div class="story-visual">
+          <img src="mockups/photos/permanent-jewelry-stack.jpg" alt="She's The Vibe permanent jewelry" class="story-photo">
+        </div>
+        <div class="story-copy">
+          <div class="sparkle-ornament" aria-hidden="true">✦ ✦ ✦</div>
+          <p class="story-script">Permanent Jewelry</p>
+          <p class="story-text">
+            A delicate chain, welded closed around your wrist &mdash; no clasp, no
+            taking it off, just a little everyday luxury that&rsquo;s always with you.
+            Choose your chain, pick your charms, and leave wearing something made
+            only for you. Mobile &amp; fully custom &mdash; I come to you, right here
+            in Orange County &amp; Southern California.
+          </p>
+          <a href="permanent-jewelry-book.html" class="btn btn-gold">Book Your Appointment</a>
+          <a href="permanent-jewelry.html" class="btn btn-burgundy" style="margin-left:10px;">Permanent Jewelry</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ STEP INTO THE VIBE ============ -->
     <section class="section categories" id="explore">
       <div class="container">
@@ -173,7 +217,7 @@
 
         <div class="category-grid">
 
-          <a href="shop.html" class="category-card">
+<a href="shop.html" class="category-card">
             <div class="category-art cat-digital">
               <img src="mockups/photos/tote-signature.webp" alt="She's The Vibe shop collection">
               <span>Shop the Collection</span>
@@ -181,7 +225,7 @@
             <div class="category-label">Shop <span class="arrow">&rarr;</span></div>
           </a>
 
-          <a href="shop.html" class="category-card">
+<a href="shop.html" class="category-card">
             <div class="category-art cat-notebooks">
               <img src="vibe-dashboard.png" alt="The Vibe Dashboard — digital life planning system">
               <span>Digital Downloads</span>
@@ -189,7 +233,7 @@
             <div class="category-label">Digital <span class="arrow">&rarr;</span></div>
           </a>
 
-          <a href="coaching.html" class="category-card">
+<a href="coaching.html" class="category-card">
             <div class="category-art cat-apparel">
               <img src="mockups/photos/coaching-warm.jpg" alt="She's The Vibe life coaching">
               <span>Coaching &amp; Mentorship</span>
@@ -197,12 +241,20 @@
             <div class="category-label">Coaching <span class="arrow">&rarr;</span></div>
           </a>
 
-          <a href="resources.html" class="category-card">
+<a href="resources.html" class="category-card">
             <div class="category-art cat-handmade">
               <img src="mockups/photos/resources-gifts.jpg" alt="She's The Vibe free resources">
               <span>Free Resources</span>
             </div>
             <div class="category-label">Resources <span class="arrow">&rarr;</span></div>
+          </a>
+
+          <a href="book.html" class="category-card">
+            <div class="category-art cat-digital">
+              <img src="mockups/photos/book-cover-blueprint.jpg" alt="The Girl Who Burned Her Mother's Blueprint">
+              <span>The Book</span>
+            </div>
+            <div class="category-label">The Book <span class="arrow">&rarr;</span></div>
           </a>
 
         </div>
@@ -219,6 +271,43 @@
         <circle cx="126" cy="12" r="1.8" fill="currentColor"/>
       </svg>
     </div>
+
+    <!-- ============ FROM THE JOURNAL ============ -->
+    <section class="section categories">
+      <div class="container">
+        <h2 class="section-title"><span>From the Journal</span></h2>
+        <div class="category-grid">
+          <a href="post-never-meant-one-box.html" class="category-card">
+            <div class="category-art cat-notebooks">
+              <img src="mockups/photos/blog-never-meant-one-box.jpg" alt="She Was Never Meant to Fit One Box">
+              <span>The Vibe Editorial</span>
+            </div>
+            <div class="category-label">She Was Never Meant to Fit One Box <span class="arrow">&rarr;</span></div>
+          </a>
+          <a href="post-institutionalized.html" class="category-card">
+            <div class="category-art cat-digital">
+              <img src="mockups/photos/blog-institutionalized.jpg" alt="INSTITUTIONALIZED">
+              <span>The Vibe Editorial</span>
+            </div>
+            <div class="category-label">INSTITUTIONALIZED <span class="arrow">&rarr;</span></div>
+          </a>
+          <a href="post-invisible-labor.html" class="category-card">
+            <div class="category-art cat-handmade">
+              <img src="mockups/photos/blog-invisible-labor.jpg" alt="The Invisible Labor of Remembering Everything">
+              <span>The Vibe Editorial</span>
+            </div>
+            <div class="category-label">The Invisible Labor of Remembering Everything <span class="arrow">&rarr;</span></div>
+          </a>
+          <a href="blog.html" class="category-card">
+            <div class="category-art cat-apparel">
+              <img src="mockups/photos/blog-official-on-paper.jpg" alt="She's The Vibe blog — all stories">
+              <span>All Stories</span>
+            </div>
+            <div class="category-label">Blog <span class="arrow">&rarr;</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- ============ STORY ============ -->
     <section class="story">
@@ -322,6 +411,7 @@
 
     </div>
 
+    <div class="container" style="text-align:center; padding:16px 0 12px;" aria-hidden="true"><span style="color:#c9a227; font-size:14px;">&#10022;</span> <svg viewBox="0 0 24 24" width="26" height="26" style="color:#c9a227; vertical-align:middle;"><path d="M11 2h2v7h7v2h-7v11h-2V11H4V9h7z" fill="currentColor"/></svg> <span style="color:#c9a227; font-size:14px;">&#10022;</span><div style="font-family:'Pinyon Script',cursive; font-size:28px; color:#f7ead9; margin-top:2px;">God first, vibe always.</div></div>
     <div class="container footer-bottom">
       <p>&copy; 2026 She&rsquo;s The Vibe &middot; A Wood Family Creations LLC Brand. All rights reserved.</p>
       <nav aria-label="Legal">
