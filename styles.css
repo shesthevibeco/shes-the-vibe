@@ -984,6 +984,12 @@ a { text-decoration: none; color: inherit; }
   display: block;
 }
 
+/* Portrait magazine covers (e.g. Editorial No. 001): show the cover whole,
+   centered above the text, instead of the fill-and-crop two-column layout. */
+.post-feature.cover-full { grid-template-columns: 1fr; }
+.post-feature.cover-full .post-img { min-height: 0; padding: 34px 16px 6px; text-align: center; }
+.post-feature.cover-full .post-img img { width: auto; max-width: 460px; height: auto; object-fit: contain; margin: 0 auto; box-shadow: 0 18px 40px rgba(69,20,37,.28); }
+
 .post-body { padding: 44px 42px; }
 
 .post-date {
