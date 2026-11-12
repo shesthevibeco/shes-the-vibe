@@ -1518,3 +1518,84 @@ a { text-decoration: none; color: inherit; }
   .freebie-modal-script { font-size: 1.5rem; }
   .freebie-modal-card h3 { font-size: 1.4rem; }
 }
+
+/* ---------- Testimonials (Community Love) ---------- */
+
+.reviews {
+  padding: 84px 0 92px;
+  background:
+    radial-gradient(700px 380px at 12% 0%, rgba(201, 162, 94, 0.14), transparent 60%),
+    linear-gradient(180deg, var(--cream), var(--cream-deep));
+}
+
+.reviews .sparkle-ornament { text-align: center; }
+
+.reviews-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  color: var(--burgundy-900);
+  text-align: center;
+  margin: 10px 0 12px;
+}
+
+.reviews-sub {
+  text-align: center;
+  color: var(--ink-soft);
+  font-weight: 300;
+  font-size: 1.05rem;
+  max-width: 62ch;
+  margin: 0 auto 52px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 26px;
+}
+
+.review-card {
+  background: #fffdf7;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+  padding: 36px 34px 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.review-cat {
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--burgundy-700);
+  margin-bottom: 14px;
+}
+
+.review-quote { margin: 0; }
+
+.review-tag {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.32rem;
+  line-height: 1.35;
+  color: var(--burgundy-800);
+  margin-bottom: 14px;
+}
+
+.review-body {
+  color: var(--ink-soft);
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.review-name {
+  margin-top: auto;
+  padding-top: 20px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+}
